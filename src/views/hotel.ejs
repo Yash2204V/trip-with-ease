@@ -19,86 +19,32 @@
       }
     </style>
   </head>
-  <body class="bg-white">
-    <header class="border-b">
-      <div
-        class="container mx-auto px-4 py-4 flex items-center justify-between"
-      >
-        <svg
-          viewBox="0 0 32 32"
-          xmlns="http://www.w3.org/2000/svg"
-          aria-hidden="true"
-          role="presentation"
-          focusable="false"
-          style="display: block; fill: #ff5a5f; height: 32px; width: 32px"
-        >
-          <path
-            d="M16 1c2.008 0 3.463.963 4.751 3.269l.533 1.025c1.954 3.83 6.114 12.54 7.1 14.836l.145.353c.667 1.591.91 2.472.96 3.396l.01.415.001.228c0 4.062-2.877 6.478-6.357 6.478-2.224 0-4.556-1.258-6.709-3.386l-.257-.26-.172-.179h-.011l-.176.185c-2.044 2.1-4.267 3.42-6.414 3.615l-.28.019-.267.006C5.377 31 2.5 28.584 2.5 24.522l.005-.469c.026-.928.23-1.768.83-3.244l.216-.524c.966-2.298 6.083-12.989 7.707-16.034C12.537 1.963 13.992 1 16 1zm0 2c-1.239 0-2.053.539-2.987 2.21l-.523 1.008c-1.926 3.776-6.06 12.43-7.031 14.692l-.345.836c-.427 1.071-.573 1.655-.605 2.24l-.009.33v.206c0 2.086 1.074 3.431 2.866 3.476 1.273-.03 3.132-.853 5.425-3.27.396-.413.716-.717.993-.95l.356-.282c.264-.22.464-.364.57-.43l.378-.197.44.005c.442.022.89.158 1.203.35l.319.197.745.692c1.95 1.9 3.636 3.07 5.054 3.07 1.792-.045 2.866-1.39 2.866-3.476l-.01-.536c-.041-.534-.172-1.08-.54-2.124l-.208-.524c-.96-2.325-5.113-10.992-7.054-14.76l-.515-.995C18.053 3.539 17.24 3 16 3zm-3.667 18.976a1.75 1.75 0 1 1 0 3.5 1.75 1.75 0 0 1 0-3.5zm7.334 0a1.75 1.75 0 1 1 0 3.5 1.75 1.75 0 0 1 0-3.5zM16 9.75a3.25 3.25 0 1 1 0 6.5 3.25 3.25 0 0 1 0-6.5z"
-          ></path>
-        </svg>
-        <div class="hidden md:flex items-center space-x-4 text-sm">
-          <span>Airbnb your home</span>
-          <svg
-            viewBox="0 0 16 16"
-            xmlns="http://www.w3.org/2000/svg"
-            aria-hidden="true"
-            role="presentation"
-            focusable="false"
-            style="
-              display: block;
-              height: 16px;
-              width: 16px;
-              fill: currentcolor;
-            "
-          >
-            <path
-              d="m8.002.25a7.77 7.77 0 0 1 7.748 7.776 7.75 7.75 0 0 1 -7.521 7.72l-.246.004a7.75 7.75 0 0 1 -7.73-7.513l-.003-.245a7.75 7.75 0 0 1 7.752-7.742zm1.949 8.5h-3.903c.155 2.897 1.176 5.343 1.886 5.493l.068.007c.68-.002 1.72-2.365 1.932-5.23zm4.255 0h-2.752c-.091 1.96-.53 3.783-1.188 5.076a6.257 6.257 0 0 0 3.905-4.829zm-9.661 0h-2.75a6.257 6.257 0 0 0 3.934 5.075c-.615-1.208-1.036-2.875-1.162-4.686l-.022-.39zm1.188-6.576-.115.046a6.257 6.257 0 0 0 -3.823 5.03h2.75c.085-1.83.471-3.54 1.059-4.81zm2.262-.424c-.702.002-1.784 2.512-1.947 5.5h3.904c-.156-2.903-1.178-5.343-1.892-5.494l-.065-.007zm2.28.432.023.05c.643 1.288 1.069 3.084 1.157 5.018h2.748a6.275 6.275 0 0 0 -3.929-5.068z"
-            ></path>
-          </svg>
-          <div class="flex items-center space-x-2 border rounded-full p-2">
-            <svg
-              viewBox="0 0 32 32"
-              xmlns="http://www.w3.org/2000/svg"
-              aria-hidden="true"
-              role="presentation"
-              focusable="false"
-              style="
-                display: block;
-                fill: none;
-                height: 16px;
-                width: 16px;
-                stroke: currentcolor;
-                stroke-width: 3;
-                overflow: visible;
-              "
-            >
-              <g fill="none" fill-rule="nonzero">
-                <path d="m2 16h28"></path>
-                <path d="m2 24h28"></path>
-                <path d="m2 8h28"></path>
-              </g>
-            </svg>
-            <svg
-              viewBox="0 0 32 32"
-              xmlns="http://www.w3.org/2000/svg"
-              aria-hidden="true"
-              role="presentation"
-              focusable="false"
-              style="
-                display: block;
-                height: 30px;
-                width: 30px;
-                fill: currentcolor;
-              "
-            >
-              <path
-                d="m16 .7c-8.437 0-15.3 6.863-15.3 15.3s6.863 15.3 15.3 15.3 15.3-6.863 15.3-15.3-6.863-15.3-15.3-15.3zm0 28c-4.021 0-7.605-1.884-9.933-4.81a12.425 12.425 0 0 1 6.451-4.4 6.507 6.507 0 0 1 -3.018-5.49c0-3.584 2.916-6.5 6.5-6.5s6.5 2.916 6.5 6.5a6.513 6.513 0 0 1 -3.019 5.491 12.42 12.42 0 0 1 6.452 4.4c-2.328 2.925-5.912 4.809-9.933 4.809z"
-              ></path>
-            </svg>
-          </div>
-        </div>
+  <body class="min-h-screen font-poppins text-[#0B427E] bg-[#1EAAE3]">
+  <div class="container mx-auto px-4 py-8 relative overflow-hidden">
+    <header class="flex justify-between items-center mb-12 relative z-10">
+      <div class="flex items-center space-x-4">
+
+          <h1 class="text-3xl font-playfair font-bold text-[#1B518D] leading-tight">TripWithEase</h1>
       </div>
-    </header>
+      <div class="hidden md:flex items-center space-x-4">
+          <a href="/hotelsAndHouses" class="rounded-full px-4 py-2 bg-white bg-opacity-50 text-[#1B518D] hover:text-[#1B518D] transition-colors duration-300 flex items-center space-x-2">
+              <span>Hotels & Houses</span>
+          <svg xmlns="http://www.w3.org/2000/svg" class="h-5 w-5" viewBox="0 0 20 20" fill="currentColor">
+              <path fill-rule="evenodd" d="M4.083 9h1.946c.089-1.546.383-2.97.837-4.118A6.004 6.004 0 004.083 9zM10 2a8 8 0 100 16 8 8 0 000-16zm0 2c-.076 0-.232.032-.465.262-.238.234-.497.623-.737 1.182-.389.907-.673 2.142-.766 3.556h3.936c-.093-1.414-.377-2.649-.766-3.556-.24-.56-.5-.948-.737-1.182C10.232 4.032 10.076 4 10 4zm3.971 5c-.089-1.546-.383-2.97-.837-4.118A6.004 6.004 0 0115.917 9h-1.946zm-2.003 2H8.032c.093 1.414.377 2.649.766 3.556.24.56.5.948.737 1.182.233.23.389.262.465.262.076 0 .232-.032.465-.262.238-.234.498-.623.737-1.182.389-.907.673-2.142.766-3.556zm1.166 4.118c.454-1.147.748-2.572.837-4.118h1.946a6.004 6.004 0 01-2.783 4.118zm-6.268 0C6.412 13.97 6.118 12.546 6.03 11H4.083a6.004 6.004 0 002.783 4.118z" clip-rule="evenodd" />
+          </svg>
+          </a>
+          <div class="relative">
+              <button class="main-button flex items-center space-x-2 bg-white bg-opacity-50 rounded-full px-4 py-2 text-[#1B518D]">
+                  <svg xmlns="http://www.w3.org/2000/svg" class="h-5 w-5" viewBox="0 0 20 20" fill="currentColor">
+                      <path fill-rule="evenodd" d="M3 5a1 1 0 011-1h12a1 1 0 110 2H4a1 1 0 01-1-1zM3 10a1 1 0 011-1h12a1 1 0 110 2H4a1 1 0 01-1-1zM3 15a1 1 0 011-1h12a1 1 0 110 2H4a1 1 0 01-1-1z" clip-rule="evenodd" />
+                  </svg>
+                  <svg xmlns="http://www.w3.org/2000/svg" class="h-5 w-5" viewBox="0 0 20 20" fill="currentColor">
+                      <path fill-rule="evenodd" d="M10 9a3 3 0 100-6 3 3 0 000 6zm-7 9a7 7 0 1114 0H3z" clip-rule="evenodd" />
+                  </svg>
+              </button>
+          </div>
+      </div>
+  </header>
 
     <main class="container mx-auto px-4 py-8">
       <h1 class="text-3xl font-bold mb-4">
@@ -351,6 +297,7 @@
         © 2023 Airbnb, Inc. · Privacy · Terms · Sitemap
       </div>
     </footer>
+  </div>
     <script src="/javascripts/hotelScript.js"></script>
   </body>
 </html>

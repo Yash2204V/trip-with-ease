@@ -6,7 +6,7 @@
   "scripts": {
     "test": "echo \"Error: no test specified\" && exit 1",
     "start": "node app.js",
-    "dev" : "nodemon app.js"
+    "dev": "nodemon app.js"
   },
   "keywords": [
     "[express",
@@ -17,6 +17,8 @@
   "author": "Yash Varma & Vaibhav",
   "license": "ISC",
   "dependencies": {
+    "@splinetool/loader": "^1.9.28",
+    "@splinetool/runtime": "^1.9.28",
     "dotenv": "^16.4.5",
     "ejs": "^3.1.10",
     "express": "^4.21.0",
