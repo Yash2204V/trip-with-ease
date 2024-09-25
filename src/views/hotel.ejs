@@ -1,0 +1,356 @@
+<!DOCTYPE html>
+<html lang="en">
+  <head>
+    <meta charset="UTF-8" />
+    <meta name="viewport" content="width=device-width, initial-scale=1.0" />
+    <title>Old Tbilisi 2BR Apt with Terrace - By Wehost | Airbnb</title>
+    <script src="https://cdn.tailwindcss.com"></script>
+    <link
+      href="https://fonts.googleapis.com/css2?family=Roboto:wght@300;400;500;700&display=swap"
+      rel="stylesheet"
+    />
+
+    <link rel="stylesheet" href="https://unpkg.com/leaflet@1.7.1/dist/leaflet.css" />
+    <script src="https://unpkg.com/leaflet@1.7.1/dist/leaflet.js"></script>
+
+    <style>
+      body {
+        font-family: "Roboto", sans-serif;
+      }
+    </style>
+  </head>
+  <body class="bg-white">
+    <header class="border-b">
+      <div
+        class="container mx-auto px-4 py-4 flex items-center justify-between"
+      >
+        <svg
+          viewBox="0 0 32 32"
+          xmlns="http://www.w3.org/2000/svg"
+          aria-hidden="true"
+          role="presentation"
+          focusable="false"
+          style="display: block; fill: #ff5a5f; height: 32px; width: 32px"
+        >
+          <path
+            d="M16 1c2.008 0 3.463.963 4.751 3.269l.533 1.025c1.954 3.83 6.114 12.54 7.1 14.836l.145.353c.667 1.591.91 2.472.96 3.396l.01.415.001.228c0 4.062-2.877 6.478-6.357 6.478-2.224 0-4.556-1.258-6.709-3.386l-.257-.26-.172-.179h-.011l-.176.185c-2.044 2.1-4.267 3.42-6.414 3.615l-.28.019-.267.006C5.377 31 2.5 28.584 2.5 24.522l.005-.469c.026-.928.23-1.768.83-3.244l.216-.524c.966-2.298 6.083-12.989 7.707-16.034C12.537 1.963 13.992 1 16 1zm0 2c-1.239 0-2.053.539-2.987 2.21l-.523 1.008c-1.926 3.776-6.06 12.43-7.031 14.692l-.345.836c-.427 1.071-.573 1.655-.605 2.24l-.009.33v.206c0 2.086 1.074 3.431 2.866 3.476 1.273-.03 3.132-.853 5.425-3.27.396-.413.716-.717.993-.95l.356-.282c.264-.22.464-.364.57-.43l.378-.197.44.005c.442.022.89.158 1.203.35l.319.197.745.692c1.95 1.9 3.636 3.07 5.054 3.07 1.792-.045 2.866-1.39 2.866-3.476l-.01-.536c-.041-.534-.172-1.08-.54-2.124l-.208-.524c-.96-2.325-5.113-10.992-7.054-14.76l-.515-.995C18.053 3.539 17.24 3 16 3zm-3.667 18.976a1.75 1.75 0 1 1 0 3.5 1.75 1.75 0 0 1 0-3.5zm7.334 0a1.75 1.75 0 1 1 0 3.5 1.75 1.75 0 0 1 0-3.5zM16 9.75a3.25 3.25 0 1 1 0 6.5 3.25 3.25 0 0 1 0-6.5z"
+          ></path>
+        </svg>
+        <div class="hidden md:flex items-center space-x-4 text-sm">
+          <span>Airbnb your home</span>
+          <svg
+            viewBox="0 0 16 16"
+            xmlns="http://www.w3.org/2000/svg"
+            aria-hidden="true"
+            role="presentation"
+            focusable="false"
+            style="
+              display: block;
+              height: 16px;
+              width: 16px;
+              fill: currentcolor;
+            "
+          >
+            <path
+              d="m8.002.25a7.77 7.77 0 0 1 7.748 7.776 7.75 7.75 0 0 1 -7.521 7.72l-.246.004a7.75 7.75 0 0 1 -7.73-7.513l-.003-.245a7.75 7.75 0 0 1 7.752-7.742zm1.949 8.5h-3.903c.155 2.897 1.176 5.343 1.886 5.493l.068.007c.68-.002 1.72-2.365 1.932-5.23zm4.255 0h-2.752c-.091 1.96-.53 3.783-1.188 5.076a6.257 6.257 0 0 0 3.905-4.829zm-9.661 0h-2.75a6.257 6.257 0 0 0 3.934 5.075c-.615-1.208-1.036-2.875-1.162-4.686l-.022-.39zm1.188-6.576-.115.046a6.257 6.257 0 0 0 -3.823 5.03h2.75c.085-1.83.471-3.54 1.059-4.81zm2.262-.424c-.702.002-1.784 2.512-1.947 5.5h3.904c-.156-2.903-1.178-5.343-1.892-5.494l-.065-.007zm2.28.432.023.05c.643 1.288 1.069 3.084 1.157 5.018h2.748a6.275 6.275 0 0 0 -3.929-5.068z"
+            ></path>
+          </svg>
+          <div class="flex items-center space-x-2 border rounded-full p-2">
+            <svg
+              viewBox="0 0 32 32"
+              xmlns="http://www.w3.org/2000/svg"
+              aria-hidden="true"
+              role="presentation"
+              focusable="false"
+              style="
+                display: block;
+                fill: none;
+                height: 16px;
+                width: 16px;
+                stroke: currentcolor;
+                stroke-width: 3;
+                overflow: visible;
+              "
+            >
+              <g fill="none" fill-rule="nonzero">
+                <path d="m2 16h28"></path>
+                <path d="m2 24h28"></path>
+                <path d="m2 8h28"></path>
+              </g>
+            </svg>
+            <svg
+              viewBox="0 0 32 32"
+              xmlns="http://www.w3.org/2000/svg"
+              aria-hidden="true"
+              role="presentation"
+              focusable="false"
+              style="
+                display: block;
+                height: 30px;
+                width: 30px;
+                fill: currentcolor;
+              "
+            >
+              <path
+                d="m16 .7c-8.437 0-15.3 6.863-15.3 15.3s6.863 15.3 15.3 15.3 15.3-6.863 15.3-15.3-6.863-15.3-15.3-15.3zm0 28c-4.021 0-7.605-1.884-9.933-4.81a12.425 12.425 0 0 1 6.451-4.4 6.507 6.507 0 0 1 -3.018-5.49c0-3.584 2.916-6.5 6.5-6.5s6.5 2.916 6.5 6.5a6.513 6.513 0 0 1 -3.019 5.491 12.42 12.42 0 0 1 6.452 4.4c-2.328 2.925-5.912 4.809-9.933 4.809z"
+              ></path>
+            </svg>
+          </div>
+        </div>
+      </div>
+    </header>
+
+    <main class="container mx-auto px-4 py-8">
+      <h1 class="text-3xl font-bold mb-4">
+        Old Tbilisi 2BR Apt with Terrace - By Wehost
+      </h1>
+
+      <div class="flex justify-between items-center mb-4">
+        <div class="flex items-center space-x-2">
+          <svg
+            viewBox="0 0 32 32"
+            xmlns="http://www.w3.org/2000/svg"
+            aria-hidden="true"
+            role="presentation"
+            focusable="false"
+            style="
+              display: block;
+              height: 14px;
+              width: 14px;
+              fill: currentcolor;
+            "
+          >
+            <path
+              d="M15.094 1.579l-4.124 8.885-9.86 1.27a1 1 0 0 0-.542 1.736l7.293 6.565-1.965 9.852a1 1 0 0 0 1.483 1.061L16 25.951l8.625 4.997a1 1 0 0 0 1.482-1.06l-1.965-9.853 7.293-6.565a1 1 0 0 0-.541-1.735l-9.86-1.271-4.127-8.885a1 1 0 0 0-1.814 0z"
+              fill-rule="evenodd"
+            ></path>
+          </svg>
+          <span class="font-semibold">4.78</span>
+          <span class="text-gray-600 underline">144 reviews</span>
+        </div>
+        <div class="flex items-center space-x-4">
+          <button class="flex items-center space-x-2">
+            <svg
+              viewBox="0 0 32 32"
+              xmlns="http://www.w3.org/2000/svg"
+              aria-hidden="true"
+              role="presentation"
+              focusable="false"
+              style="
+                display: block;
+                fill: none;
+                height: 16px;
+                width: 16px;
+                stroke: currentcolor;
+                stroke-width: 2;
+                overflow: visible;
+              "
+            >
+              <g fill="none">
+                <path d="M27 18v9a2 2 0 0 1-2 2H7a2 2 0 0 1-2-2v-9"></path>
+                <path d="M16 3v23V3z"></path>
+                <path d="M6 13l9.293-9.293a1 1 0 0 1 1.414 0L26 13"></path>
+              </g>
+            </svg>
+            <span>Share</span>
+          </button>
+          <button class="flex items-center space-x-2">
+            <svg
+              viewBox="0 0 32 32"
+              xmlns="http://www.w3.org/2000/svg"
+              aria-hidden="true"
+              role="presentation"
+              focusable="false"
+              style="
+                display: block;
+                fill: none;
+                height: 16px;
+                width: 16px;
+                stroke: currentcolor;
+                stroke-width: 2;
+                overflow: visible;
+              "
+            >
+              <path
+                d="m16 28c7-4.733 14-10 14-17 0-1.792-.683-3.583-2.05-4.95-1.367-1.366-3.158-2.05-4.95-2.05-1.791 0-3.583.684-4.949 2.05l-2.051 2.051-2.05-2.051c-1.367-1.366-3.158-2.05-4.95-2.05-1.791 0-3.583.684-4.949 2.05-1.367 1.367-2.051 3.158-2.051 4.95 0 7 7 12.267 14 17z"
+              ></path>
+            </svg>
+            <span>Save</span>
+          </button>
+        </div>
+      </div>
+
+      <div class="grid grid-cols-4 gap-2 mb-8">
+        <div class="col-span-2 row-span-2">
+          <img
+            src="/images/sample-pic.avif"
+            alt="Kitchen"
+            class="w-full h-full object-cover rounded-l-xl"
+          />
+        </div>
+        <div>
+          <img
+            src="/images/sample-pic.avif"
+            alt="Terrace"
+            class="w-full h-full object-cover"
+          />
+        </div>
+        <div>
+          <img
+            src="/images/sample-pic.avif"
+            alt="Living Room"
+            class="w-full h-full object-cover rounded-tr-xl"
+          />
+        </div>
+        <div>
+          <img
+            src="/images/sample-pic.avif"
+            alt="Bedroom"
+            class="w-full h-full object-cover"
+          />
+        </div>
+        <div class="relative">
+          <img
+            src="/images/sample-pic.avif"
+            alt="Bathroom"
+            class="w-full h-full object-cover rounded-br-xl"
+          />
+          <button
+            class="absolute bottom-4 right-4 bg-white text-black px-4 py-2 rounded-lg text-sm font-semibold"
+          >
+            Show all photos
+          </button>
+        </div>
+      </div>
+
+      <div class="flex flex-col md:flex-row gap-8">
+        <div class="md:w-2/3">
+          <h2 class="text-2xl font-semibold mb-4">
+            Entire rental unit in Tbilisi, Georgia
+          </h2>
+          <p class="text-gray-700 mb-4">
+            4 guests · 2 bedrooms · 2 beds · 2 bathrooms
+          </p>
+          <hr class="my-6" />
+          <div class="flex items-center space-x-4 mb-4">
+            <img
+              src="/images/sample-pic.avif"
+              alt="Host"
+              class="w-12 h-12 rounded-full"
+            />
+            <div>
+              <h3 class="font-semibold">Hosted by Tamaz From Wehost</h3>
+              <p class="text-gray-600">Superhost · 6 years hosting</p>
+            </div>
+          </div>
+          <hr class="my-6" />
+          <h3 class="font-semibold text-xl mb-4">About this space</h3>
+          <p class="text-gray-700 mb-4">
+            Welcome to our beautiful 2-bedroom apartment in the heart of Old
+            Tbilisi. Enjoy stunning views from the private terrace and
+            experience the charm of this historic neighborhood. The apartment
+            features modern amenities and stylish decor, perfect for your stay
+            in Georgia's capital.
+          </p>
+                  <!-- Map Start-->
+        <div class="max-w-4xl mx-auto p-4">
+          <form id="searchForm" class="flex gap-2 mb-4">
+              <input
+                  type="text"
+                  id="searchInput"
+                  placeholder="Enter city name"
+                  class="flex-grow px-3 py-2 border border-gray-300 rounded-md focus:outline-none focus:ring-2 focus:ring-blue-500"
+              />
+              <button
+                  type="submit"
+                  id="searchButton"
+                  class="px-4 py-2 bg-blue-500 text-white rounded-md hover:bg-blue-600 focus:outline-none focus:ring-2 focus:ring-blue-500 focus:ring-offset-2"
+              >
+                  Search
+              </button>
+          </form>
+          <div id="map" class="rounded-lg shadow-lg" style="height: 450px; 
+          filter: invert(100%);
+          filter: saturate(150%) brightness(95%);"></div>
+      </div>
+        <!-- Map Ends-->
+        </div>
+        <div class="md:w-1/3">
+          <div class="bg-white rounded-xl shadow-lg p-6 sticky top-4">
+            <div class="flex justify-between items-baseline mb-6">
+              <span class="text-2xl font-bold">₹8,820</span>
+              <span class="text-base text-gray-500">night</span>
+            </div>
+
+            <div class="grid grid-cols-2 gap-2 mb-4">
+              <div class="border border-gray-300 rounded-lg p-2">
+                <div class="text-xs font-semibold text-gray-500">CHECK-IN</div>
+                <div>10/4/2024</div>
+              </div>
+              <div class="border border-gray-300 rounded-lg p-2">
+                <div class="text-xs font-semibold text-gray-500">CHECKOUT</div>
+                <div>10/9/2024</div>
+              </div>
+            </div>
+
+            <div class="border border-gray-300 rounded-lg p-2 mb-4">
+              <div class="text-xs font-semibold text-gray-500">GUESTS</div>
+              <div class="flex justify-between items-center">
+                <span>1 guest</span>
+                <svg
+                  xmlns="http://www.w3.org/2000/svg"
+                  class="h-5 w-5 text-gray-400"
+                  viewBox="0 0 20 20"
+                  fill="currentColor"
+                >
+                  <path
+                    fill-rule="evenodd"
+                    d="M5.293 7.293a1 1 0 011.414 0L10 10.586l3.293-3.293a1 1 0 111.414 1.414l-4 4a1 1 0 01-1.414 0l-4-4a1 1 0 010-1.414z"
+                    clip-rule="evenodd"
+                  />
+                </svg>
+              </div>
+            </div>
+
+            <button
+              class="w-full bg-[#FF5A5F] text-white py-3 rounded-lg font-semibold mb-4"
+            >
+              Reserve
+            </button>
+
+            <p class="text-center text-gray-500 text-sm mb-6">
+              You won't be charged yet
+            </p>
+
+            <div class="space-y-4 mb-6">
+              <div class="flex justify-between">
+                <span class="underline">₹8,820 x 5 nights</span>
+                <span>₹44,102</span>
+              </div>
+              <div class="flex justify-between">
+                <span class="underline">Cleaning fee</span>
+                <span>₹2,785</span>
+              </div>
+            </div>
+
+            <div
+              class="flex justify-between font-semibold pt-4 border-t border-gray-300"
+            >
+              <span>Total before taxes</span>
+              <span>₹46,887</span>
+            </div>
+          </div>
+        </div>
+      </div>
+    </main>
+
+
+
+    <footer class="bg-gray-100 mt-12 py-8">
+      <div class="container mx-auto px-4 text-center text-sm text-gray-600">
+        © 2023 Airbnb, Inc. · Privacy · Terms · Sitemap
+      </div>
+    </footer>
+    <script src="/javascripts/hotelScript.js"></script>
+  </body>
+</html>
