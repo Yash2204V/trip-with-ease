@@ -10,14 +10,6 @@
         tailwind.config = {
             theme: {
                 extend: {
-                    colors: {
-                        'orange-light': '#FFE5B4',
-                        'orange-medium': '#FFA500',
-                        'orange-dark': '#FF8C00',
-                        'green-light': '#E8F5E9',
-                        'green-medium': '#8BC34A',
-                        'green-dark': '#4CAF50',
-                    },
                     fontFamily: {
                         'playfair': ['"Playfair Display"', 'serif'],
                         'poppins': ['Poppins', 'sans-serif'],
@@ -27,30 +19,27 @@
         }
     </script>
     <style>
-        body {
-            background: linear-gradient(135deg, #FFE5B4, #E8F5E9);
-        }
         .custom-shape {
             clip-path: polygon(0 0, 100% 0, 100% 85%, 0 100%);
         }
     </style>
 </head>
-<body class="min-h-screen font-poppins text-green-dark">
+<body class="min-h-screen font-poppins text-black bg-[#3FA1DE]">
     <div class="container mx-auto px-4 py-8 relative overflow-hidden">
         <header class="flex justify-between items-center mb-12 relative z-10">
             <div class="flex items-center space-x-4">
 
-                <h1 class="text-2xl font-playfair font-bold text-orange-dark">TripWithEase</h1>
+                <h1 class="text-2xl font-playfair font-bold text-black">TripWithEase</h1>
             </div>
             <div class="hidden md:flex items-center space-x-4">
-                <a href="/hotelsAndHouses" class="text-green-dark hover:text-orange-dark transition-colors duration-300">Hotels & Houses</a>
+                <a href="/hotelsAndHouses" class="text-black hover:text-black transition-colors duration-300">Hotels & Houses</a>
                 <button class="bg-white bg-opacity-50 rounded-full p-2">
                     <svg xmlns="http://www.w3.org/2000/svg" class="h-5 w-5" viewBox="0 0 20 20" fill="currentColor">
                         <path fill-rule="evenodd" d="M4.083 9h1.946c.089-1.546.383-2.97.837-4.118A6.004 6.004 0 004.083 9zM10 2a8 8 0 100 16 8 8 0 000-16zm0 2c-.076 0-.232.032-.465.262-.238.234-.497.623-.737 1.182-.389.907-.673 2.142-.766 3.556h3.936c-.093-1.414-.377-2.649-.766-3.556-.24-.56-.5-.948-.737-1.182C10.232 4.032 10.076 4 10 4zm3.971 5c-.089-1.546-.383-2.97-.837-4.118A6.004 6.004 0 0115.917 9h-1.946zm-2.003 2H8.032c.093 1.414.377 2.649.766 3.556.24.56.5.948.737 1.182.233.23.389.262.465.262.076 0 .232-.032.465-.262.238-.234.498-.623.737-1.182.389-.907.673-2.142.766-3.556zm1.166 4.118c.454-1.147.748-2.572.837-4.118h1.946a6.004 6.004 0 01-2.783 4.118zm-6.268 0C6.412 13.97 6.118 12.546 6.03 11H4.083a6.004 6.004 0 002.783 4.118z" clip-rule="evenodd" />
                     </svg>
                 </button>
                 <div class="relative">
-                    <button class="flex items-center space-x-2 bg-white bg-opacity-50 rounded-full px-4 py-2 text-green-dark">
+                    <button class="flex items-center space-x-2 bg-white bg-opacity-50 rounded-full px-4 py-2 text-black">
                         <svg xmlns="http://www.w3.org/2000/svg" class="h-5 w-5" viewBox="0 0 20 20" fill="currentColor">
                             <path fill-rule="evenodd" d="M3 5a1 1 0 011-1h12a1 1 0 110 2H4a1 1 0 01-1-1zM3 10a1 1 0 011-1h12a1 1 0 110 2H4a1 1 0 01-1-1zM3 15a1 1 0 011-1h12a1 1 0 110 2H4a1 1 0 01-1-1z" clip-rule="evenodd" />
                         </svg>
@@ -64,12 +53,12 @@
 
         <main class="flex flex-col lg:flex-row items-center justify-between relative z-10">
             <div class="lg:w-1/2 mb-8 lg:mb-0">
-                <h2 class="font-playfair text-6xl lg:text-8xl font-bold text-orange-dark leading-tight mb-6">
-                    India <span class="text-green-dark">in all</span><br>
+                <h2 class="font-playfair text-6xl lg:text-8xl font-bold text-black leading-tight mb-6">
+                    India <span class="text-black">in all</span><br>
                     its glory
                 </h2>
                 <div class="bg-white bg-opacity-50 rounded-3xl p-6 mb-6">
-                    <p class="text-green-dark mb-4">
+                    <p class="text-black mb-4">
                         India is a country of unique blend of traditions and innovations. It's a place where millennia-old culture meets the future
                     </p>
                     <div class="flex items-center space-x-2 mb-4">
@@ -77,16 +66,16 @@
                         <img src="/placeholder.svg?height=48&width=48" alt="User 2" class="w-12 h-12 rounded-full">
                         <img src="/placeholder.svg?height=48&width=48" alt="User 3" class="w-12 h-12 rounded-full">
                     </div>
-                    <button class="bg-orange-dark text-white rounded-full px-8 py-2 font-semibold hover:bg-orange-medium transition-colors duration-300">Go</button>
+                    <button class="bg-black text-white rounded-full px-8 py-2 font-semibold hover:bg-black transition-colors duration-300">Go</button>
                 </div>
                 <div class="space-y-4">
-                    <a href="#" class="block text-green-dark text-xl hover:text-orange-dark transition-colors duration-300">
+                    <a href="#" class="block text-black text-xl hover:text-black transition-colors duration-300">
                         France And Its Secrets
                         <svg xmlns="http://www.w3.org/2000/svg" class="h-6 w-6 inline-block ml-2" fill="none" viewBox="0 0 24 24" stroke="currentColor">
                             <path stroke-linecap="round" stroke-linejoin="round" stroke-width="2" d="M17 8l4 4m0 0l-4 4m4-4H3" />
                         </svg>
                     </a>
-                    <a href="#" class="block text-green-dark text-xl hover:text-orange-dark transition-colors duration-300">
+                    <a href="#" class="block text-black text-xl hover:text-black transition-colors duration-300">
                         Austria And Its Strict Style
                         <svg xmlns="http://www.w3.org/2000/svg" class="h-6 w-6 inline-block ml-2" fill="none" viewBox="0 0 24 24" stroke="currentColor">
                             <path stroke-linecap="round" stroke-linejoin="round" stroke-width="2" d="M17 8l4 4m0 0l-4 4m4-4H3" />
@@ -94,86 +83,77 @@
                     </a>
                 </div>
             </div>
-            <div class="lg:w-1/2 relative">
-                <div class="custom-shape bg-gradient-to-br from-orange-medium to-green-medium rounded-full w-full max-w-md mx-auto aspect-square overflow-hidden">
-                    <img src="/lotus.jpeg" alt="Lotus Flower" class="w-full h-full object-cover">
+            <div class="lg:w-1/2 w-1/3 relative">
+                <div class="max-w-md mx-auto overflow-hidden">
+<video src="/images/island-house-copy.mp4" autoplay muted loop></video>
                 </div>
-                <svg class="absolute top-0 right-0 w-32 h-32 text-orange-light" viewBox="0 0 100 100" fill="none" xmlns="http://www.w3.org/2000/svg">
-                    <path d="M100 0H0V100C0 44.7715 44.7715 0 100 0Z" fill="currentColor"/>
-                </svg>
-                <svg class="absolute bottom-0 left-0 w-32 h-32 text-green-light" viewBox="0 0 100 100" fill="none" xmlns="http://www.w3.org/2000/svg">
-                    <path d="M0 100H100V0C100 55.2285 55.2285 100 0 100Z" fill="currentColor"/>
-                </svg>
             </div>
         </main>
 
         <section class="mt-12 bg-white bg-opacity-50 rounded-3xl p-6">
-            <h3 class="text-2xl font-semibold text-green-dark mb-4">Explore nearby</h3>
+            <h3 class="text-2xl font-semibold text-black mb-4">Explore nearby</h3>
             <div class="grid grid-cols-2 md:grid-cols-4 gap-4">
                 <a href="#" class="flex items-center space-x-4">
                     <img src="/placeholder.svg?height=64&width=64" alt="Tokyo" class="w-16 h-16 rounded-lg object-cover">
                     <div>
-                        <h4 class="font-semibold text-green-dark">Tokyo</h4>
-                        <p class="text-sm text-green-medium">2 hour drive</p>
+                        <h4 class="font-semibold text-black">Tokyo</h4>
+                        <p class="text-sm text-black">2 hour drive</p>
                     </div>
                 </a>
                 <a href="#" class="flex items-center space-x-4">
                     <img src="/placeholder.svg?height=64&width=64" alt="Kyoto" class="w-16 h-16 rounded-lg object-cover">
                     <div>
-                        <h4 class="font-semibold text-green-dark">Kyoto</h4>
-                        <p class="text-sm text-green-medium">3 hour drive</p>
+                        <h4 class="font-semibold text-black">Kyoto</h4>
+                        <p class="text-sm text-black">3 hour drive</p>
                     </div>
                 </a>
                 <a href="#" class="flex items-center space-x-4">
                     <img src="/placeholder.svg?height=64&width=64" alt="Osaka" class="w-16 h-16 rounded-lg object-cover">
                     <div>
-                        <h4 class="font-semibold text-green-dark">Osaka</h4>
-                        <p class="text-sm text-green-medium">2.5 hour drive</p>
+                        <h4 class="font-semibold text-black">Osaka</h4>
+                        <p class="text-sm text-black">2.5 hour drive</p>
                     </div>
                 </a>
                 <a href="#" class="flex items-center space-x-4">
                     <img src="/placeholder.svg?height=64&width=64" alt="Nara" class="w-16 h-16 rounded-lg object-cover">
                     <div>
-                        <h4 class="font-semibold text-green-dark">Nara</h4>
-                        <p class="text-sm text-green-medium">1 hour drive</p>
+                        <h4 class="font-semibold text-black">Nara</h4>
+                        <p class="text-sm text-black">1 hour drive</p>
                     </div>
                 </a>
             </div>
         </section>
 
-        <footer class="mt-12 flex flex-col md:flex-row justify-between items-center text-green-dark relative z-10">
+        <footer class="mt-12 flex flex-col md:flex-row justify-between items-center text-black relative z-10">
             <nav class="mb-4 md:mb-0">
                 <ul class="flex flex-wrap justify-center md:justify-start space-x-6">
-                    <li><a href="#" class="hover:text-orange-dark transition-colors duration-300">Join Us</a></li>
-                    <li><a href="#" class="hover:text-orange-dark transition-colors duration-300">Travel</a></li>
-                    <li><a href="#" class="hover:text-orange-dark transition-colors duration-300">About Us</a></li>
-                    <li><a href="#" class="hover:text-orange-dark transition-colors duration-300">Blogs</a></li>
+                    <li><a href="#" class="hover:text-black transition-colors duration-300">Join Us</a></li>
+                    <li><a href="#" class="hover:text-black transition-colors duration-300">Travel</a></li>
+                    <li><a href="#" class="hover:text-black transition-colors duration-300">About Us</a></li>
+                    <li><a href="#" class="hover:text-black transition-colors duration-300">Blogs</a></li>
                 </ul>
             </nav>
             <div class="flex items-center space-x-4">
-                <a href="#" class="text-green-dark hover:text-orange-dark">
+                <a href="#" class="text-black hover:text-black">
                     <svg class="h-6 w-6" fill="currentColor" viewBox="0 0 24 24">
                         <path d="M24 12.073c0-6.627-5.373-12-12-12s-12 5.373-12 12c0 5.99 4.388 10.954 10.125 11.854v-8.385H7.078v-3.47h3.047V9.43c0-3.007 1.792-4.669 4.533-4.669 1.312 0 2.686.235 2.686.235v2.953H15.83c-1.491 0-1.956.925-1.956 1.874v2.25h3.328l-.532 3.47h-2.796v8.385C19.612 23.027 24 18.062 24 12.073z"/>
                     </svg>
                 </a>
-                <a href="#" class="text-green-dark hover:text-orange-dark">
+                <a href="#" class="text-black hover:text-black">
                     <svg class="h-6 w-6" fill="currentColor" viewBox="0 0 24 24">
                         <path d="M23.953 4.57a10 10 0 01-2.825.775 4.958 4.958 0 002.163-2.723c-.951.555-2.005.959-3.127 1.184a4.92 4.92 0 00-8.384 4.482C7.69 8.095 4.067 6.13 1.64 3.162a4.822 4.822 0 00-.666 2.475c0 1.71.87 3.213 2.188 4.096a4.904 4.904 0 01-2.228-.616v.06a4.923 4.923 0 003.946 4.827 4.996 4.996 0 01-2.212.085 4.936 4.936 0 004.604 3.417 9.867 9.867 0 01-6.102 2.105c-.39 0-.779-.023-1.17-.067a13.995 13.995 0 007.557 2.209c9.053 0 13.998-7.496 13.998-13.985 0-.21 0-.42-.015-.63A9.935 9.935 0 0024 4.59z"/>
                     </svg>
                 </a>
-                <a href="#" class="text-green-dark hover:text-orange-dark">
+                <a href="#" class="text-black hover:text-black">
                     <svg class="h-6 w-6" fill="currentColor" viewBox="0 0 24 24">
                         <path d="M12 0C8.74 0 8.333.015 7.053.072 5.775.132 4.905.333 4.14.63c-.789.306-1.459.717-2.126 1.384S.935 3.35.63 4.14C.333 4.905.131 5.775.072 7.053.012 8.333 0 8.74 0 12s.015 3.667.072 4.947c.06 1.277.261 2.148.558 2.913.306.788.717 1.459 1.384 2.126.667.666 1.336 1.079 2.126 1.384.766.296 1.636.499 2.913.558C8.333 23.988 8.74 24 12 24s3.667-.015 4.947-.072c1.277-.06 2.148-.262 2.913-.558.788-.306 1.459-.718 2.126-1.384.666-.667 1.079-1.335 1.384-2.126.296-.765.499-1.636.558-2.913.06-1.28.072-1.687.072-4.947s-.015-3.667-.072-4.947c-.06-1.277-.262-2.149-.558-2.913-.306-.789-.718-1.459-1.384-2.126C21.319 1.347 20.651.935 19.86.63c-.765-.297-1.636-.499-2.913-.558C15.667.012 15.26 0 12 0zm0 2.16c3.203 0 3.585.016 4.85.071 1.17.055 1.805.249 2.227.415.562.217.96.477 1.382.896.419.42.679.819.896 1.381.164.422.36 1.057.413 2.227.057 1.266.07 1.646.07 4.85s-.015 3.585-.074 4.85c-.061 1.17-.256 1.805-.421 2.227-.224.562-.479.96-.899 1.382-.419.419-.824.679-1.38.896-.42.164-1.065.36-2.235.413-1.274.057-1.649.07-4.859.07-3.211 0-3.586-.015-4.859-.074-1.171-.061-1.816-.256-2.236-.421-.569-.224-.96-.479-1.379-.899-.421-.419-.69-.824-.9-1.38-.165-.42-.359-1.065-.42-2.235-.045-1.26-.061-1.649-.061-4.844 0-3.196.016-3.586.061-4.861.061-1.17.255-1.814.42-2.234.21-.57.479-.96.9-1.381.419-.419.81-.689 1.379-.898.42-.166 1.051-.361 2.221-.421 1.275-.045 1.65-.06 4.859-.06l.045.03zm0 3.678c-3.405 0-6.162 2.76-6.162 6.162 0 3.405 2.76 6.162 6.162 6.162 3.405 0 6.162-2.76 6.162-6.162 0-3.405-2.76-6.162-6.162-6.162zM12 16c-2.21 0-4-1.79-4-4s1.79-4 4-4 4 1.79 4 4-1.79 4-4 4zm7.846-10.405c0 .795-.646 1.44-1.44 1.44-.795 0-1.44-.646-1.44-1.44 0-.794.646-1.439 1.44-1.439.793-.001 1.44.645 1.44 1.439z"/>
                     </svg>
                 </a>
             </div>
-            <div class="text-4xl font-playfair text-orange-dark mt-4 md:mt-0">2024</div>
+            <div class="text-4xl font-playfair text-black mt-4 md:mt-0">2024</div>
         </footer>
     </div>
-
     <script>
-
-
         // Add interactivity for user menu button
         document.querySelector('button:last-of-type').addEventListener('click', () => {
             alert('User menu clicked! Add your user menu functionality here.');
