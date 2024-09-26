@@ -68,7 +68,7 @@ app.get('/auth/google/callback',
 );
 
 app.get('/profile', (req, res) => {
-    res.send(`<h1>Profile</h1><pre>${JSON.stringify(req.user, null, 2)}</pre>`);
+    res.render("home");
 });
 
 app.listen(3000, ()=>{
