@@ -241,7 +241,16 @@
             <p class="text-center text-gray-500 text-sm mb-6">
               You won't be charged yet
             </p>
-
+            <div id="calendar" class="bg-white shadow-md rounded-lg p-4 max-w-sm mx-8 mb-8">
+              <div class="flex justify-between items-center mb-4">
+                  <button id="prevMonth" class="text-gray-600 hover:text-gray-800">&lt;</button>
+                  <h2 id="monthYear" class="text-lg font-semibold text-gray-800"></h2>
+                  <button id="nextMonth" class="text-gray-600 hover:text-gray-800">&gt;</button>
+              </div>
+              <div id="weekdays" class="grid grid-cols-7 gap-1 mb-2"></div>
+              <div id="days" class="grid grid-cols-7 gap-1"></div>
+              <div id="currentTime" class="mt-4 text-center text-sm text-gray-600"></div>
+          </div>
             <div class="space-y-4 mb-6">
               <div class="flex justify-between">
                 <span class="underline">₹8,820 x 5 nights</span>
@@ -263,10 +272,10 @@
           
           
           <!-- Weather Section -->
-            <div class="mt-1 w-full min-h-screen display-block text-center" >
-              <h1 class="  text-center text-3xl font-bold mt-8">Weather App</h1>
-              <div class="max-w-md mx-auto my-8 text-black rounded-[50px] overflow-hidden">
-                <div class="p-4">
+            <div class="mt-24 w-full min-h-screen display-block text-center" >
+              <h1 class="  text-center text-3xl font-bold mt-8 pb-2 ">Weather Forecast</h1>
+              <div class="max-w-md mx-auto my-1 text-black rounded-[50px] overflow-hidden">
+                <div class="p-2">
                     <div class="flex items-center justify-between mb-6">
                         <input type="text" placeholder="Enter City Name To check Weather" class="input-weather flex-1 py-4 px-6 bg-[#ebfffc] text-[#555] rounded-[30px] mr-4 focus:outline-none text-lg" spellcheck="false" required>
                         <button class="button-weather bg-[#ebfffc] p-4 rounded-full">
@@ -312,8 +321,9 @@
       </div>
               <!-- Comment Section Start-->
 
-<div class="heading text-center font-bold text-3xl m-5 text-gray-800">Comment</div>
-  <div class="editor w-full flex flex-col text-gray-800 border border-gray-300 p-4 shadow-lg">
+
+  <div class="editor max-w-4xl flex flex-col text-gray-800 border border-gray-300 p-4 shadow-lg">
+    <div class="heading text-center font-bold text-3xl text-gray-800"> Write a Comments Here</div>
     <textarea class="description bg-gray-100 sec p-3 h-60 border border-gray-300 outline-none" spellcheck="false" placeholder="Describe everything about this post here"></textarea>
     <!-- icons -->
     <fieldset class="starability-slot mt-6">
