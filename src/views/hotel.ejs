@@ -1,90 +1,67 @@
 <!DOCTYPE html>
 <html lang="en">
-  <head>
-    <meta charset="UTF-8" />
-    <meta name="viewport" content="width=device-width, initial-scale=1.0" />
-    <title>Old Tbilisi 2BR Apt with Terrace - By Wehost | Airbnb</title>
-    <script src="https://cdn.tailwindcss.com"></script>
-    <link rel="stylesheet" href="/stylesheets/ratingStyle.css">
-    <link rel="stylesheet" href="https://cdnjs.cloudflare.com/ajax/libs/font-awesome/6.6.0/css/all.min.css" integrity="sha512-Kc323vGBEqzTmouAECnVceyQqyqdsSiqLQISBL29aUW4U/M7pSPA/gEUZQqv1cwx4OnYxTxve5UMg5GT6L4JJg==" crossorigin="anonymous" referrerpolicy="no-referrer" />
-    <link
-      href="https://fonts.googleapis.com/css2?family=Roboto:wght@300;400;500;700&display=swap"
-      rel="stylesheet"
-    />
-    <link rel="stylesheet" href="/stylesheets/footerAnimateStyle.css">
-    <link rel="stylesheet" href="https://unpkg.com/leaflet@1.7.1/dist/leaflet.css" />
-    <script src="https://unpkg.com/leaflet@1.7.1/dist/leaflet.js"></script>
 
-    <style>
-      body {
-        font-family: "Roboto", sans-serif;
-      }
-    </style>
-  </head>
-  <body class="min-h-screen font-poppins text-[#0B427E]">
+<head>
+  <meta charset="UTF-8" />
+  <meta name="viewport" content="width=device-width, initial-scale=1.0" />
+  <title>Old Tbilisi 2BR Apt with Terrace - By Wehost | Airbnb</title>
+  <script src="https://cdn.tailwindcss.com"></script>
+  <link rel="stylesheet" href="/stylesheets/ratingStyle.css">
+  <link rel="stylesheet" href="https://cdnjs.cloudflare.com/ajax/libs/font-awesome/6.6.0/css/all.min.css"
+    integrity="sha512-Kc323vGBEqzTmouAECnVceyQqyqdsSiqLQISBL29aUW4U/M7pSPA/gEUZQqv1cwx4OnYxTxve5UMg5GT6L4JJg=="
+    crossorigin="anonymous" referrerpolicy="no-referrer" />
+  <link href="https://fonts.googleapis.com/css2?family=Roboto:wght@300;400;500;700&display=swap" rel="stylesheet" />
+  <link rel="stylesheet" href="/stylesheets/footerAnimateStyle.css">
+  <link rel="stylesheet" href="https://unpkg.com/leaflet@1.7.1/dist/leaflet.css" />
+  <script src="https://unpkg.com/leaflet@1.7.1/dist/leaflet.js"></script>
+
+  <script>
+    tailwind.config = {
+      theme: {
+        extend: {
+          fontFamily: {
+            playfair: ['"Playfair Display"', "serif"],
+            poppins: ["Poppins", "sans-serif"],
+          },
+        },
+      },
+    };
+  </script>
+</head>
+
+<body class="min-h-screen font-poppins text-[#0B427E]">
   <div class="container mx-auto px-4 py-8 relative overflow-hidden">
     <header class="flex justify-between items-center mb-12 relative z-10">
       <div class="flex items-center">
-        <img
-          src="/images/TripWithEase.png"
-          alt="TripWithEase Logo"
-          class="w-24 h-24">
-        <h1
-          class="text-3xl font-playfair font-bold text-[#0B427E] leading-tight"
-        >
+        <img src="/images/TripWithEase.png" alt="TripWithEase Logo" class="w-24 h-24">
+        <h1 class="text-3xl font-playfair font-bold text-[#0B427E] leading-tight">
           TripWithEase
         </h1>
       </div>
       <div class="hidden md:flex items-center space-x-4">
-        <a
-          href="/hotelsAndHouses"
-          class="rounded-full px-4 py-2 bg-white bg-opacity-50 text-[#0B427E] hover:text-[#0B427E] transition-colors duration-300 flex items-center space-x-2"
-        >
+        <a href="/hotelsAndHouses"
+          class="rounded-full px-4 py-2 bg-white bg-opacity-50 text-[#0B427E] hover:text-[#0B427E] transition-colors duration-300 flex items-center space-x-2">
           <span>Hotels & Houses</span>
-          <svg
-            xmlns="http://www.w3.org/2000/svg"
-            class="h-5 w-5"
-            viewBox="0 0 20 20"
-            fill="currentColor"
-          >
-            <path
-              fill-rule="evenodd"
+          <svg xmlns="http://www.w3.org/2000/svg" class="h-5 w-5" viewBox="0 0 20 20" fill="currentColor">
+            <path fill-rule="evenodd"
               d="M4.083 9h1.946c.089-1.546.383-2.97.837-4.118A6.004 6.004 0 004.083 9zM10 2a8 8 0 100 16 8 8 0 000-16zm0 2c-.076 0-.232.032-.465.262-.238.234-.497.623-.737 1.182-.389.907-.673 2.142-.766 3.556h3.936c-.093-1.414-.377-2.649-.766-3.556-.24-.56-.5-.948-.737-1.182C10.232 4.032 10.076 4 10 4zm3.971 5c-.089-1.546-.383-2.97-.837-4.118A6.004 6.004 0 0115.917 9h-1.946zm-2.003 2H8.032c.093 1.414.377 2.649.766 3.556.24.56.5.948.737 1.182.233.23.389.262.465.262.076 0 .232-.032.465-.262.238-.234.498-.623.737-1.182.389-.907.673-2.142.766-3.556zm1.166 4.118c.454-1.147.748-2.572.837-4.118h1.946a6.004 6.004 0 01-2.783 4.118zm-6.268 0C6.412 13.97 6.118 12.546 6.03 11H4.083a6.004 6.004 0 002.783 4.118z"
-              clip-rule="evenodd"
-            />
+              clip-rule="evenodd" />
           </svg>
         </a>
         <div class="relative">
           <a href="/login">
-          <button
-            class="main-button flex items-center space-x-2 bg-white bg-opacity-50 rounded-full px-4 py-2 text-[#0B427E]"
-          >
-            <svg
-              xmlns="http://www.w3.org/2000/svg"
-              class="h-5 w-5"
-              viewBox="0 0 20 20"
-              fill="currentColor"
-            >
-              <path
-                fill-rule="evenodd"
-                d="M3 5a1 1 0 011-1h12a1 1 0 110 2H4a1 1 0 01-1-1zM3 10a1 1 0 011-1h12a1 1 0 110 2H4a1 1 0 01-1-1zM3 15a1 1 0 011-1h12a1 1 0 110 2H4a1 1 0 01-1-1z"
-                clip-rule="evenodd"
-              />
-            </svg>
-            <svg
-              xmlns="http://www.w3.org/2000/svg"
-              class="h-5 w-5"
-              viewBox="0 0 20 20"
-              fill="currentColor"
-            >
-              <path
-                fill-rule="evenodd"
-                d="M10 9a3 3 0 100-6 3 3 0 000 6zm-7 9a7 7 0 1114 0H3z"
-                clip-rule="evenodd"
-              />
-            </svg>
-          </button>
-        </a>
+            <button
+              class="main-button flex items-center space-x-2 bg-white bg-opacity-50 rounded-full px-4 py-2 text-[#0B427E]">
+              <svg xmlns="http://www.w3.org/2000/svg" class="h-5 w-5" viewBox="0 0 20 20" fill="currentColor">
+                <path fill-rule="evenodd"
+                  d="M3 5a1 1 0 011-1h12a1 1 0 110 2H4a1 1 0 01-1-1zM3 10a1 1 0 011-1h12a1 1 0 110 2H4a1 1 0 01-1-1zM3 15a1 1 0 011-1h12a1 1 0 110 2H4a1 1 0 01-1-1z"
+                  clip-rule="evenodd" />
+              </svg>
+              <svg xmlns="http://www.w3.org/2000/svg" class="h-5 w-5" viewBox="0 0 20 20" fill="currentColor">
+                <path fill-rule="evenodd" d="M10 9a3 3 0 100-6 3 3 0 000 6zm-7 9a7 7 0 1114 0H3z" clip-rule="evenodd" />
+              </svg>
+            </button>
+          </a>
         </div>
       </div>
     </header>
@@ -102,42 +79,20 @@
 
       <div class="grid grid-cols-4 gap-2 mb-8">
         <div class="col-span-2 row-span-2">
-          <img
-            src="/images/sample-pic.avif"
-            alt="Kitchen"
-            class="w-full h-full object-cover rounded-l-xl"
-          />
+          <img src="/images/sample-pic.avif" alt="Kitchen" class="w-full h-full object-cover rounded-l-xl" />
         </div>
         <div>
-          <img
-            src="/images/sample-pic.avif"
-            alt="Terrace"
-            class="w-full h-full object-cover"
-          />
+          <img src="/images/sample-pic.avif" alt="Terrace" class="w-full h-full object-cover" />
         </div>
         <div>
-          <img
-            src="/images/sample-pic.avif"
-            alt="Living Room"
-            class="w-full h-full object-cover rounded-tr-xl"
-          />
+          <img src="/images/sample-pic.avif" alt="Living Room" class="w-full h-full object-cover rounded-tr-xl" />
         </div>
         <div>
-          <img
-            src="/images/sample-pic.avif"
-            alt="Bedroom"
-            class="w-full h-full object-cover"
-          />
+          <img src="/images/sample-pic.avif" alt="Bedroom" class="w-full h-full object-cover" />
         </div>
         <div class="relative">
-          <img
-            src="/images/sample-pic.avif"
-            alt="Bathroom"
-            class="w-full h-full object-cover rounded-br-xl"
-          />
-          <button
-            class="absolute bottom-4 right-4 bg-white text-black px-4 py-2 rounded-lg text-sm font-semibold"
-          >
+          <img src="/images/sample-pic.avif" alt="Bathroom" class="w-full h-full object-cover rounded-br-xl" />
+          <button class="absolute bottom-4 right-4 bg-white text-black px-4 py-2 rounded-lg text-sm font-semibold">
             Show all photos
           </button>
         </div>
@@ -153,11 +108,7 @@
           </p>
           <hr class="my-6" />
           <div class="flex items-center space-x-4 mb-4">
-            <img
-              src="/images/sample-pic.avif"
-              alt="Host"
-              class="w-12 h-12 rounded-full"
-            />
+            <img src="/images/sample-pic.avif" alt="Host" class="w-12 h-12 rounded-full" />
             <div>
               <h3 class="font-semibold">Hosted by Tamaz From Wehost</h3>
               <p class="text-gray-600">Superhost · 6 years hosting</p>
@@ -172,28 +123,21 @@
             features modern amenities and stylish decor, perfect for your stay
             in Georgia's capital.
           </p>
-                  <!-- Map Start-->
-        <div class="max-w-4xl mx-auto p-4">
-          <form id="searchForm" class="flex gap-2 mb-4">
-              <input
-                  type="text"
-                  id="searchInput"
-                  placeholder="Enter city name"
-                  class="flex-grow px-3 py-2 border border-gray-300 rounded-md focus:outline-none focus:ring-2 focus:ring-blue-500"
-              />
-              <button
-                  type="submit"
-                  id="searchButton"
-                  class="px-4 py-2 bg-blue-500 text-white rounded-md hover:bg-blue-600 focus:outline-none focus:ring-2 focus:ring-blue-500 focus:ring-offset-2"
-              >
-                  Search
+          <!-- Map Start-->
+          <div class="max-w-4xl mx-auto p-4">
+            <form id="searchForm" class="flex gap-2 mb-4">
+              <input type="text" id="searchInput" placeholder="Enter city name"
+                class="flex-grow px-3 py-2 border border-gray-300 rounded-md focus:outline-none focus:ring-2 focus:ring-blue-500" />
+              <button type="submit" id="searchButton"
+                class="px-4 py-2 bg-blue-500 text-white rounded-md hover:bg-blue-600 focus:outline-none focus:ring-2 focus:ring-blue-500 focus:ring-offset-2">
+                Search
               </button>
-          </form>
-          <div id="map" class="rounded-lg shadow-lg" style="height: 450px; 
+            </form>
+            <div id="map" class="rounded-lg shadow-lg" style="height: 450px; 
           filter: invert(100%);
           filter: saturate(150%) brightness(95%);"></div>
-      </div>
-        <!-- Map Ends-->
+          </div>
+          <!-- Map Ends-->
         </div>
         <div class="md:w-1/3">
           <div class="bg-white rounded-xl shadow-lg p-6 sticky top-4">
@@ -217,24 +161,16 @@
               <div class="text-xs font-semibold text-gray-500">GUESTS</div>
               <div class="flex justify-between items-center">
                 <span>1 guest</span>
-                <svg
-                  xmlns="http://www.w3.org/2000/svg"
-                  class="h-5 w-5 text-gray-400"
-                  viewBox="0 0 20 20"
-                  fill="currentColor"
-                >
-                  <path
-                    fill-rule="evenodd"
+                <svg xmlns="http://www.w3.org/2000/svg" class="h-5 w-5 text-gray-400" viewBox="0 0 20 20"
+                  fill="currentColor">
+                  <path fill-rule="evenodd"
                     d="M5.293 7.293a1 1 0 011.414 0L10 10.586l3.293-3.293a1 1 0 111.414 1.414l-4 4a1 1 0 01-1.414 0l-4-4a1 1 0 010-1.414z"
-                    clip-rule="evenodd"
-                  />
+                    clip-rule="evenodd" />
                 </svg>
               </div>
             </div>
 
-            <button
-              class="w-full bg-[#FF5A5F] text-white py-3 rounded-lg font-semibold mb-4"
-            >
+            <button class="w-full bg-[#FF5A5F] text-white py-3 rounded-lg font-semibold mb-4">
               Reserve
             </button>
 
@@ -253,13 +189,12 @@
               </div>
             </div>
 
-            <div
-              class="flex justify-between font-semibold pt-4 border-t border-gray-300"
-            >
+            <div class="flex justify-between font-semibold pt-4 border-t border-gray-300">
               <span>Total before taxes</span>
               <span>₹46,887</span>
             </div>
           </div>
+
           
           
           <!-- Weather Section -->
@@ -334,240 +269,222 @@
       <!-- <div class="btn border border-gray-300 p-1 px-4 font-semibold cursor-pointer text-gray-500 ml-auto">Cancel</div> -->
       <div class="btn border rounded-lg border-indigo-500 p-1 px-5 py-2 font-semibold cursor-pointer text-gray-200 ml-2 bg-indigo-500">
         <i class="fa-solid fa-paper-plane"></i>
+
+
+          <!-- Weather Section -->
+          <div class="mt-1 w-full min-h-screen display-block">
+            <div class="max-w-md mx-auto my-8 text-black rounded-[50px] overflow-hidden">
+              <div class="p-6">
+                <div class="flex items-center justify-between mb-6">
+                  <input type="text" placeholder="Enter City Name"
+                    class="input-weather flex-1 py-4 px-6 bg-[#ebfffc] text-[#555] rounded-[30px] mr-4 focus:outline-none text-lg"
+                    spellcheck="false" required>
+                  <button class="button-weather bg-[#ebfffc] p-4 rounded-full">
+                    <img src="images/weather/search.png" alt="Search" class="w-6 h-6">
+                  </button>
+                </div>
+                <!-- Weather Section Start-->
+                <div class="weather hidden">
+                  <div class="flex items-center justify-center mb-6">
+                    <!-- <img src="images/weather/sunny.png" alt="Weather Icon" class="weather-icon w-48 h-48 mr-6"> -->
+                    <div class="text-center">
+                      <h1 class="text-6xl font-medium mb-2 temp">22°C</h1>
+                      <h2 class="text-4xl city">New York</h2>
+                    </div>
+                  </div>
+                  <div class="flex justify-around mb-12">
+                    <div class="flex items-center">
+                      <img src="images/weather/humidity.png" alt="Humidity" class="w-10 h-10 mr-2">
+                      <div>
+                        <p class="text-2xl humidity">50%</p>
+                        <p class="text-base">Humidity</p>
+                      </div>
+                    </div>
+                    <div class="flex items-center">
+                      <img src="images/weather/wind.png" alt="Wind" class="w-10 h-10 mr-2">
+                      <div>
+                        <p class="text-2xl wind">15 km/h</p>
+                        <p class="text-base">Wind Speed</p>
+                      </div>
+                    </div>
+                  </div>
+
+                  <div class="future_weather flex justify-center space-x-2 overflow-x-auto pb-4 mb-3">
+                    <!-- Weather details for future days will be inserted here by JavaScript -->
+                  </div>
+                </div>
+                <!-- Weather Section End-->
+              </div>
+            </div>
+          </div>
+        </div>
+>>>>>>> 9fb8d997ca6cde63f99deedc0a19724fa182d319
       </div>
-    </div>
-  </div>
-                  <!-- Comment Section End-->
+      <!-- Comment Section Start-->
+
+      <div class="heading text-center font-bold text-2xl m-5 text-gray-800">Comment</div>
+      <div class="editor w-full flex flex-col text-gray-800 border border-gray-300 p-4 shadow-lg">
+        <textarea class="description bg-gray-100 sec p-3 h-60 border border-gray-300 outline-none" spellcheck="false"
+          placeholder="Describe everything about this post here"></textarea>
+        <!-- icons -->
+        <fieldset class="starability-slot mt-6">
+          <input type="radio" id="no-rate" class="input-no-rate" name="review[rating]" value="1" checked
+            aria-label="No rating." />
+          <input type="radio" id="first-rate1" name="review[rating]" value="1" />
+          <label for="first-rate1" title="Terrible">1 star</label>
+          <input type="radio" id="first-rate2" name="review[rating]" value="2" />
+          <label for="first-rate2" title="Not good">2 stars</label>
+          <input type="radio" id="first-rate3" name="review[rating]" value="3" />
+          <label for="first-rate3" title="Average">3 stars</label>
+          <input type="radio" id="first-rate4" name="review[rating]" value="4" />
+          <label for="first-rate4" title="Very good">4 stars</label>
+          <input type="radio" id="first-rate5" name="review[rating]" value="5" />
+          <label for="first-rate5" title="Amazing">5 stars</label>
+        </fieldset>
+        <!-- buttons -->
+        <div class="buttons flex justify-end">
+          <!-- <div class="btn border border-gray-300 p-1 px-4 font-semibold cursor-pointer text-gray-500 ml-auto">Cancel</div> -->
+          <div
+            class="btn border rounded-lg border-indigo-500 p-1 px-5 py-2 font-semibold cursor-pointer text-gray-200 ml-2 bg-indigo-500">
+            <i class="fa-solid fa-paper-plane"></i>
+          </div>
+        </div>
+      </div>
+      <!-- Comment Section End-->
     </main>
 
-  <section class="bg-white">
-    <div class="mx-auto max-w-screen-xl px-4 py-12 sm:px-6 lg:px-8 lg:py-16">
-      <h2 class="text-center text-4xl font-bold tracking-tight text-gray-900 sm:text-5xl">
-        Read trusted reviews from our customers
-      </h2>
-  
-      <div class="mt-8 grid grid-cols-1 gap-4 md:grid-cols-3 md:gap-8">
-        <blockquote class="rounded-lg bg-gray-50 p-6 shadow-sm sm:p-8">
-          <div class="flex items-center gap-4">
-            <img
-              alt=""
-              src="https://images.unsplash.com/photo-1595152772835-219674b2a8a6?ixlib=rb-1.2.1&ixid=MnwxMjA3fDB8MHxwaG90by1wYWdlfHx8fGVufDB8fHx8&auto=format&fit=crop&w=1180&q=80"
-              class="size-14 rounded-full object-cover"
-            />
-  
-            <div>
-              <div class="flex justify-center gap-0.5 text-green-500">
-                <svg
-                  xmlns="http://www.w3.org/2000/svg"
-                  class="size-5"
-                  viewBox="0 0 20 20"
-                  fill="currentColor"
-                >
-                  <path
-                    d="M9.049 2.927c.3-.921 1.603-.921 1.902 0l1.07 3.292a1 1 0 00.95.69h3.462c.969 0 1.371 1.24.588 1.81l-2.8 2.034a1 1 0 00-.364 1.118l1.07 3.292c.3.921-.755 1.688-1.54 1.118l-2.8-2.034a1 1 0 00-1.175 0l-2.8 2.034c-.784.57-1.838-.197-1.539-1.118l1.07-3.292a1 1 0 00-.364-1.118L2.98 8.72c-.783-.57-.38-1.81.588-1.81h3.461a1 1 0 00.951-.69l1.07-3.292z"
-                  />
-                </svg>
-                <svg
-                  xmlns="http://www.w3.org/2000/svg"
-                  class="size-5"
-                  viewBox="0 0 20 20"
-                  fill="currentColor"
-                >
-                  <path
-                    d="M9.049 2.927c.3-.921 1.603-.921 1.902 0l1.07 3.292a1 1 0 00.95.69h3.462c.969 0 1.371 1.24.588 1.81l-2.8 2.034a1 1 0 00-.364 1.118l1.07 3.292c.3.921-.755 1.688-1.54 1.118l-2.8-2.034a1 1 0 00-1.175 0l-2.8 2.034c-.784.57-1.838-.197-1.539-1.118l1.07-3.292a1 1 0 00-.364-1.118L2.98 8.72c-.783-.57-.38-1.81.588-1.81h3.461a1 1 0 00.951-.69l1.07-3.292z"
-                  />
-                </svg>
-                <svg
-                  xmlns="http://www.w3.org/2000/svg"
-                  class="size-5"
-                  viewBox="0 0 20 20"
-                  fill="currentColor"
-                >
-                  <path
-                    d="M9.049 2.927c.3-.921 1.603-.921 1.902 0l1.07 3.292a1 1 0 00.95.69h3.462c.969 0 1.371 1.24.588 1.81l-2.8 2.034a1 1 0 00-.364 1.118l1.07 3.292c.3.921-.755 1.688-1.54 1.118l-2.8-2.034a1 1 0 00-1.175 0l-2.8 2.034c-.784.57-1.838-.197-1.539-1.118l1.07-3.292a1 1 0 00-.364-1.118L2.98 8.72c-.783-.57-.38-1.81.588-1.81h3.461a1 1 0 00.951-.69l1.07-3.292z"
-                  />
-                </svg>
-                <svg
-                  xmlns="http://www.w3.org/2000/svg"
-                  class="size-5"
-                  viewBox="0 0 20 20"
-                  fill="currentColor"
-                >
-                  <path
-                    d="M9.049 2.927c.3-.921 1.603-.921 1.902 0l1.07 3.292a1 1 0 00.95.69h3.462c.969 0 1.371 1.24.588 1.81l-2.8 2.034a1 1 0 00-.364 1.118l1.07 3.292c.3.921-.755 1.688-1.54 1.118l-2.8-2.034a1 1 0 00-1.175 0l-2.8 2.034c-.784.57-1.838-.197-1.539-1.118l1.07-3.292a1 1 0 00-.364-1.118L2.98 8.72c-.783-.57-.38-1.81.588-1.81h3.461a1 1 0 00.951-.69l1.07-3.292z"
-                  />
-                </svg>
-                <svg
-                  xmlns="http://www.w3.org/2000/svg"
-                  class="size-5"
-                  viewBox="0 0 20 20"
-                  fill="currentColor"
-                >
-                  <path
-                    d="M9.049 2.927c.3-.921 1.603-.921 1.902 0l1.07 3.292a1 1 0 00.95.69h3.462c.969 0 1.371 1.24.588 1.81l-2.8 2.034a1 1 0 00-.364 1.118l1.07 3.292c.3.921-.755 1.688-1.54 1.118l-2.8-2.034a1 1 0 00-1.175 0l-2.8 2.034c-.784.57-1.838-.197-1.539-1.118l1.07-3.292a1 1 0 00-.364-1.118L2.98 8.72c-.783-.57-.38-1.81.588-1.81h3.461a1 1 0 00.951-.69l1.07-3.292z"
-                  />
-                </svg>
+    <section class="bg-white">
+      <div class="mx-auto max-w-screen-xl px-4 py-12 sm:px-6 lg:px-8 lg:py-16">
+        <h2 class="text-center text-4xl font-bold tracking-tight text-gray-900 sm:text-5xl">
+          Read trusted reviews from our customers
+        </h2>
+
+        <div class="mt-8 grid grid-cols-1 gap-4 md:grid-cols-3 md:gap-8">
+          <blockquote class="rounded-lg bg-gray-50 p-6 shadow-sm sm:p-8">
+            <div class="flex items-center gap-4">
+              <img alt=""
+                src="https://images.unsplash.com/photo-1595152772835-219674b2a8a6?ixlib=rb-1.2.1&ixid=MnwxMjA3fDB8MHxwaG90by1wYWdlfHx8fGVufDB8fHx8&auto=format&fit=crop&w=1180&q=80"
+                class="size-14 rounded-full object-cover" />
+
+              <div>
+                <div class="flex justify-center gap-0.5 text-green-500">
+                  <svg xmlns="http://www.w3.org/2000/svg" class="size-5" viewBox="0 0 20 20" fill="currentColor">
+                    <path
+                      d="M9.049 2.927c.3-.921 1.603-.921 1.902 0l1.07 3.292a1 1 0 00.95.69h3.462c.969 0 1.371 1.24.588 1.81l-2.8 2.034a1 1 0 00-.364 1.118l1.07 3.292c.3.921-.755 1.688-1.54 1.118l-2.8-2.034a1 1 0 00-1.175 0l-2.8 2.034c-.784.57-1.838-.197-1.539-1.118l1.07-3.292a1 1 0 00-.364-1.118L2.98 8.72c-.783-.57-.38-1.81.588-1.81h3.461a1 1 0 00.951-.69l1.07-3.292z" />
+                  </svg>
+                  <svg xmlns="http://www.w3.org/2000/svg" class="size-5" viewBox="0 0 20 20" fill="currentColor">
+                    <path
+                      d="M9.049 2.927c.3-.921 1.603-.921 1.902 0l1.07 3.292a1 1 0 00.95.69h3.462c.969 0 1.371 1.24.588 1.81l-2.8 2.034a1 1 0 00-.364 1.118l1.07 3.292c.3.921-.755 1.688-1.54 1.118l-2.8-2.034a1 1 0 00-1.175 0l-2.8 2.034c-.784.57-1.838-.197-1.539-1.118l1.07-3.292a1 1 0 00-.364-1.118L2.98 8.72c-.783-.57-.38-1.81.588-1.81h3.461a1 1 0 00.951-.69l1.07-3.292z" />
+                  </svg>
+                  <svg xmlns="http://www.w3.org/2000/svg" class="size-5" viewBox="0 0 20 20" fill="currentColor">
+                    <path
+                      d="M9.049 2.927c.3-.921 1.603-.921 1.902 0l1.07 3.292a1 1 0 00.95.69h3.462c.969 0 1.371 1.24.588 1.81l-2.8 2.034a1 1 0 00-.364 1.118l1.07 3.292c.3.921-.755 1.688-1.54 1.118l-2.8-2.034a1 1 0 00-1.175 0l-2.8 2.034c-.784.57-1.838-.197-1.539-1.118l1.07-3.292a1 1 0 00-.364-1.118L2.98 8.72c-.783-.57-.38-1.81.588-1.81h3.461a1 1 0 00.951-.69l1.07-3.292z" />
+                  </svg>
+                  <svg xmlns="http://www.w3.org/2000/svg" class="size-5" viewBox="0 0 20 20" fill="currentColor">
+                    <path
+                      d="M9.049 2.927c.3-.921 1.603-.921 1.902 0l1.07 3.292a1 1 0 00.95.69h3.462c.969 0 1.371 1.24.588 1.81l-2.8 2.034a1 1 0 00-.364 1.118l1.07 3.292c.3.921-.755 1.688-1.54 1.118l-2.8-2.034a1 1 0 00-1.175 0l-2.8 2.034c-.784.57-1.838-.197-1.539-1.118l1.07-3.292a1 1 0 00-.364-1.118L2.98 8.72c-.783-.57-.38-1.81.588-1.81h3.461a1 1 0 00.951-.69l1.07-3.292z" />
+                  </svg>
+                  <svg xmlns="http://www.w3.org/2000/svg" class="size-5" viewBox="0 0 20 20" fill="currentColor">
+                    <path
+                      d="M9.049 2.927c.3-.921 1.603-.921 1.902 0l1.07 3.292a1 1 0 00.95.69h3.462c.969 0 1.371 1.24.588 1.81l-2.8 2.034a1 1 0 00-.364 1.118l1.07 3.292c.3.921-.755 1.688-1.54 1.118l-2.8-2.034a1 1 0 00-1.175 0l-2.8 2.034c-.784.57-1.838-.197-1.539-1.118l1.07-3.292a1 1 0 00-.364-1.118L2.98 8.72c-.783-.57-.38-1.81.588-1.81h3.461a1 1 0 00.951-.69l1.07-3.292z" />
+                  </svg>
+                </div>
+
+                <p class="mt-0.5 text-lg font-medium text-gray-900">Raju</p>
               </div>
-  
-              <p class="mt-0.5 text-lg font-medium text-gray-900">Raju</p>
             </div>
-          </div>
-  
-          <p class="mt-4 text-gray-700">
-            Lorem ipsum dolor sit, amet consectetur adipisicing elit. Culpa sit rerum incidunt, a
-            consequuntur recusandae ab saepe illo est quia obcaecati neque quibusdam eius accusamus
-            error officiis atque voluptates magnam!
-          </p>
-        </blockquote>
-  
-        <blockquote class="rounded-lg bg-gray-50 p-6 shadow-sm sm:p-8">
-          <div class="flex items-center gap-4">
-            <img
-              alt=""
-              src="https://images.unsplash.com/photo-1595152772835-219674b2a8a6?ixlib=rb-1.2.1&ixid=MnwxMjA3fDB8MHxwaG90by1wYWdlfHx8fGVufDB8fHx8&auto=format&fit=crop&w=1180&q=80"
-              class="size-14 rounded-full object-cover"
-            />
-  
-            <div>
-              <div class="flex justify-center gap-0.5 text-green-500">
-                <svg
-                  xmlns="http://www.w3.org/2000/svg"
-                  class="size-5"
-                  viewBox="0 0 20 20"
-                  fill="currentColor"
-                >
-                  <path
-                    d="M9.049 2.927c.3-.921 1.603-.921 1.902 0l1.07 3.292a1 1 0 00.95.69h3.462c.969 0 1.371 1.24.588 1.81l-2.8 2.034a1 1 0 00-.364 1.118l1.07 3.292c.3.921-.755 1.688-1.54 1.118l-2.8-2.034a1 1 0 00-1.175 0l-2.8 2.034c-.784.57-1.838-.197-1.539-1.118l1.07-3.292a1 1 0 00-.364-1.118L2.98 8.72c-.783-.57-.38-1.81.588-1.81h3.461a1 1 0 00.951-.69l1.07-3.292z"
-                  />
-                </svg>
-                <svg
-                  xmlns="http://www.w3.org/2000/svg"
-                  class="size-5"
-                  viewBox="0 0 20 20"
-                  fill="currentColor"
-                >
-                  <path
-                    d="M9.049 2.927c.3-.921 1.603-.921 1.902 0l1.07 3.292a1 1 0 00.95.69h3.462c.969 0 1.371 1.24.588 1.81l-2.8 2.034a1 1 0 00-.364 1.118l1.07 3.292c.3.921-.755 1.688-1.54 1.118l-2.8-2.034a1 1 0 00-1.175 0l-2.8 2.034c-.784.57-1.838-.197-1.539-1.118l1.07-3.292a1 1 0 00-.364-1.118L2.98 8.72c-.783-.57-.38-1.81.588-1.81h3.461a1 1 0 00.951-.69l1.07-3.292z"
-                  />
-                </svg>
-                <svg
-                  xmlns="http://www.w3.org/2000/svg"
-                  class="size-5"
-                  viewBox="0 0 20 20"
-                  fill="currentColor"
-                >
-                  <path
-                    d="M9.049 2.927c.3-.921 1.603-.921 1.902 0l1.07 3.292a1 1 0 00.95.69h3.462c.969 0 1.371 1.24.588 1.81l-2.8 2.034a1 1 0 00-.364 1.118l1.07 3.292c.3.921-.755 1.688-1.54 1.118l-2.8-2.034a1 1 0 00-1.175 0l-2.8 2.034c-.784.57-1.838-.197-1.539-1.118l1.07-3.292a1 1 0 00-.364-1.118L2.98 8.72c-.783-.57-.38-1.81.588-1.81h3.461a1 1 0 00.951-.69l1.07-3.292z"
-                  />
-                </svg>
-                <svg
-                  xmlns="http://www.w3.org/2000/svg"
-                  class="size-5"
-                  viewBox="0 0 20 20"
-                  fill="currentColor"
-                >
-                  <path
-                    d="M9.049 2.927c.3-.921 1.603-.921 1.902 0l1.07 3.292a1 1 0 00.95.69h3.462c.969 0 1.371 1.24.588 1.81l-2.8 2.034a1 1 0 00-.364 1.118l1.07 3.292c.3.921-.755 1.688-1.54 1.118l-2.8-2.034a1 1 0 00-1.175 0l-2.8 2.034c-.784.57-1.838-.197-1.539-1.118l1.07-3.292a1 1 0 00-.364-1.118L2.98 8.72c-.783-.57-.38-1.81.588-1.81h3.461a1 1 0 00.951-.69l1.07-3.292z"
-                  />
-                </svg>
-                <svg
-                  xmlns="http://www.w3.org/2000/svg"
-                  class="size-5"
-                  viewBox="0 0 20 20"
-                  fill="currentColor"
-                >
-                  <path
-                    d="M9.049 2.927c.3-.921 1.603-.921 1.902 0l1.07 3.292a1 1 0 00.95.69h3.462c.969 0 1.371 1.24.588 1.81l-2.8 2.034a1 1 0 00-.364 1.118l1.07 3.292c.3.921-.755 1.688-1.54 1.118l-2.8-2.034a1 1 0 00-1.175 0l-2.8 2.034c-.784.57-1.838-.197-1.539-1.118l1.07-3.292a1 1 0 00-.364-1.118L2.98 8.72c-.783-.57-.38-1.81.588-1.81h3.461a1 1 0 00.951-.69l1.07-3.292z"
-                  />
-                </svg>
+
+            <p class="mt-4 text-gray-700">
+              Lorem ipsum dolor sit, amet consectetur adipisicing elit. Culpa sit rerum incidunt, a
+              consequuntur recusandae ab saepe illo est quia obcaecati neque quibusdam eius accusamus
+              error officiis atque voluptates magnam!
+            </p>
+          </blockquote>
+
+          <blockquote class="rounded-lg bg-gray-50 p-6 shadow-sm sm:p-8">
+            <div class="flex items-center gap-4">
+              <img alt=""
+                src="https://images.unsplash.com/photo-1595152772835-219674b2a8a6?ixlib=rb-1.2.1&ixid=MnwxMjA3fDB8MHxwaG90by1wYWdlfHx8fGVufDB8fHx8&auto=format&fit=crop&w=1180&q=80"
+                class="size-14 rounded-full object-cover" />
+
+              <div>
+                <div class="flex justify-center gap-0.5 text-green-500">
+                  <svg xmlns="http://www.w3.org/2000/svg" class="size-5" viewBox="0 0 20 20" fill="currentColor">
+                    <path
+                      d="M9.049 2.927c.3-.921 1.603-.921 1.902 0l1.07 3.292a1 1 0 00.95.69h3.462c.969 0 1.371 1.24.588 1.81l-2.8 2.034a1 1 0 00-.364 1.118l1.07 3.292c.3.921-.755 1.688-1.54 1.118l-2.8-2.034a1 1 0 00-1.175 0l-2.8 2.034c-.784.57-1.838-.197-1.539-1.118l1.07-3.292a1 1 0 00-.364-1.118L2.98 8.72c-.783-.57-.38-1.81.588-1.81h3.461a1 1 0 00.951-.69l1.07-3.292z" />
+                  </svg>
+                  <svg xmlns="http://www.w3.org/2000/svg" class="size-5" viewBox="0 0 20 20" fill="currentColor">
+                    <path
+                      d="M9.049 2.927c.3-.921 1.603-.921 1.902 0l1.07 3.292a1 1 0 00.95.69h3.462c.969 0 1.371 1.24.588 1.81l-2.8 2.034a1 1 0 00-.364 1.118l1.07 3.292c.3.921-.755 1.688-1.54 1.118l-2.8-2.034a1 1 0 00-1.175 0l-2.8 2.034c-.784.57-1.838-.197-1.539-1.118l1.07-3.292a1 1 0 00-.364-1.118L2.98 8.72c-.783-.57-.38-1.81.588-1.81h3.461a1 1 0 00.951-.69l1.07-3.292z" />
+                  </svg>
+                  <svg xmlns="http://www.w3.org/2000/svg" class="size-5" viewBox="0 0 20 20" fill="currentColor">
+                    <path
+                      d="M9.049 2.927c.3-.921 1.603-.921 1.902 0l1.07 3.292a1 1 0 00.95.69h3.462c.969 0 1.371 1.24.588 1.81l-2.8 2.034a1 1 0 00-.364 1.118l1.07 3.292c.3.921-.755 1.688-1.54 1.118l-2.8-2.034a1 1 0 00-1.175 0l-2.8 2.034c-.784.57-1.838-.197-1.539-1.118l1.07-3.292a1 1 0 00-.364-1.118L2.98 8.72c-.783-.57-.38-1.81.588-1.81h3.461a1 1 0 00.951-.69l1.07-3.292z" />
+                  </svg>
+                  <svg xmlns="http://www.w3.org/2000/svg" class="size-5" viewBox="0 0 20 20" fill="currentColor">
+                    <path
+                      d="M9.049 2.927c.3-.921 1.603-.921 1.902 0l1.07 3.292a1 1 0 00.95.69h3.462c.969 0 1.371 1.24.588 1.81l-2.8 2.034a1 1 0 00-.364 1.118l1.07 3.292c.3.921-.755 1.688-1.54 1.118l-2.8-2.034a1 1 0 00-1.175 0l-2.8 2.034c-.784.57-1.838-.197-1.539-1.118l1.07-3.292a1 1 0 00-.364-1.118L2.98 8.72c-.783-.57-.38-1.81.588-1.81h3.461a1 1 0 00.951-.69l1.07-3.292z" />
+                  </svg>
+                  <svg xmlns="http://www.w3.org/2000/svg" class="size-5" viewBox="0 0 20 20" fill="currentColor">
+                    <path
+                      d="M9.049 2.927c.3-.921 1.603-.921 1.902 0l1.07 3.292a1 1 0 00.95.69h3.462c.969 0 1.371 1.24.588 1.81l-2.8 2.034a1 1 0 00-.364 1.118l1.07 3.292c.3.921-.755 1.688-1.54 1.118l-2.8-2.034a1 1 0 00-1.175 0l-2.8 2.034c-.784.57-1.838-.197-1.539-1.118l1.07-3.292a1 1 0 00-.364-1.118L2.98 8.72c-.783-.57-.38-1.81.588-1.81h3.461a1 1 0 00.951-.69l1.07-3.292z" />
+                  </svg>
+                </div>
+
+                <p class="mt-0.5 text-lg font-medium text-gray-900">Raju</p>
               </div>
-  
-              <p class="mt-0.5 text-lg font-medium text-gray-900">Raju</p>
             </div>
-          </div>
-  
-          <p class="mt-4 text-gray-700">
-            Lorem ipsum dolor sit, amet consectetur adipisicing elit. Culpa sit rerum incidunt, a
-            consequuntur recusandae ab saepe illo est quia obcaecati neque quibusdam eius accusamus
-            error officiis atque voluptates magnam!
-          </p>
-        </blockquote>
-  
-        <blockquote class="rounded-lg bg-gray-50 p-6 shadow-sm sm:p-8">
-          <div class="flex items-center gap-4">
-            <img
-              alt=""
-              src="https://images.unsplash.com/photo-1595152772835-219674b2a8a6?ixlib=rb-1.2.1&ixid=MnwxMjA3fDB8MHxwaG90by1wYWdlfHx8fGVufDB8fHx8&auto=format&fit=crop&w=1180&q=80"
-              class="size-14 rounded-full object-cover"
-            />
-  
-            <div>
-              <div class="flex justify-center gap-0.5 text-green-500">
-                <svg
-                  xmlns="http://www.w3.org/2000/svg"
-                  class="size-5"
-                  viewBox="0 0 20 20"
-                  fill="currentColor"
-                >
-                  <path
-                    d="M9.049 2.927c.3-.921 1.603-.921 1.902 0l1.07 3.292a1 1 0 00.95.69h3.462c.969 0 1.371 1.24.588 1.81l-2.8 2.034a1 1 0 00-.364 1.118l1.07 3.292c.3.921-.755 1.688-1.54 1.118l-2.8-2.034a1 1 0 00-1.175 0l-2.8 2.034c-.784.57-1.838-.197-1.539-1.118l1.07-3.292a1 1 0 00-.364-1.118L2.98 8.72c-.783-.57-.38-1.81.588-1.81h3.461a1 1 0 00.951-.69l1.07-3.292z"
-                  />
-                </svg>
-                <svg
-                  xmlns="http://www.w3.org/2000/svg"
-                  class="size-5"
-                  viewBox="0 0 20 20"
-                  fill="currentColor"
-                >
-                  <path
-                    d="M9.049 2.927c.3-.921 1.603-.921 1.902 0l1.07 3.292a1 1 0 00.95.69h3.462c.969 0 1.371 1.24.588 1.81l-2.8 2.034a1 1 0 00-.364 1.118l1.07 3.292c.3.921-.755 1.688-1.54 1.118l-2.8-2.034a1 1 0 00-1.175 0l-2.8 2.034c-.784.57-1.838-.197-1.539-1.118l1.07-3.292a1 1 0 00-.364-1.118L2.98 8.72c-.783-.57-.38-1.81.588-1.81h3.461a1 1 0 00.951-.69l1.07-3.292z"
-                  />
-                </svg>
-                <svg
-                  xmlns="http://www.w3.org/2000/svg"
-                  class="size-5"
-                  viewBox="0 0 20 20"
-                  fill="currentColor"
-                >
-                  <path
-                    d="M9.049 2.927c.3-.921 1.603-.921 1.902 0l1.07 3.292a1 1 0 00.95.69h3.462c.969 0 1.371 1.24.588 1.81l-2.8 2.034a1 1 0 00-.364 1.118l1.07 3.292c.3.921-.755 1.688-1.54 1.118l-2.8-2.034a1 1 0 00-1.175 0l-2.8 2.034c-.784.57-1.838-.197-1.539-1.118l1.07-3.292a1 1 0 00-.364-1.118L2.98 8.72c-.783-.57-.38-1.81.588-1.81h3.461a1 1 0 00.951-.69l1.07-3.292z"
-                  />
-                </svg>
-                <svg
-                  xmlns="http://www.w3.org/2000/svg"
-                  class="size-5"
-                  viewBox="0 0 20 20"
-                  fill="currentColor"
-                >
-                  <path
-                    d="M9.049 2.927c.3-.921 1.603-.921 1.902 0l1.07 3.292a1 1 0 00.95.69h3.462c.969 0 1.371 1.24.588 1.81l-2.8 2.034a1 1 0 00-.364 1.118l1.07 3.292c.3.921-.755 1.688-1.54 1.118l-2.8-2.034a1 1 0 00-1.175 0l-2.8 2.034c-.784.57-1.838-.197-1.539-1.118l1.07-3.292a1 1 0 00-.364-1.118L2.98 8.72c-.783-.57-.38-1.81.588-1.81h3.461a1 1 0 00.951-.69l1.07-3.292z"
-                  />
-                </svg>
-                <svg
-                  xmlns="http://www.w3.org/2000/svg"
-                  class="size-5"
-                  viewBox="0 0 20 20"
-                  fill="currentColor"
-                >
-                  <path
-                    d="M9.049 2.927c.3-.921 1.603-.921 1.902 0l1.07 3.292a1 1 0 00.95.69h3.462c.969 0 1.371 1.24.588 1.81l-2.8 2.034a1 1 0 00-.364 1.118l1.07 3.292c.3.921-.755 1.688-1.54 1.118l-2.8-2.034a1 1 0 00-1.175 0l-2.8 2.034c-.784.57-1.838-.197-1.539-1.118l1.07-3.292a1 1 0 00-.364-1.118L2.98 8.72c-.783-.57-.38-1.81.588-1.81h3.461a1 1 0 00.951-.69l1.07-3.292z"
-                  />
-                </svg>
+
+            <p class="mt-4 text-gray-700">
+              Lorem ipsum dolor sit, amet consectetur adipisicing elit. Culpa sit rerum incidunt, a
+              consequuntur recusandae ab saepe illo est quia obcaecati neque quibusdam eius accusamus
+              error officiis atque voluptates magnam!
+            </p>
+          </blockquote>
+
+          <blockquote class="rounded-lg bg-gray-50 p-6 shadow-sm sm:p-8">
+            <div class="flex items-center gap-4">
+              <img alt=""
+                src="https://images.unsplash.com/photo-1595152772835-219674b2a8a6?ixlib=rb-1.2.1&ixid=MnwxMjA3fDB8MHxwaG90by1wYWdlfHx8fGVufDB8fHx8&auto=format&fit=crop&w=1180&q=80"
+                class="size-14 rounded-full object-cover" />
+
+              <div>
+                <div class="flex justify-center gap-0.5 text-green-500">
+                  <svg xmlns="http://www.w3.org/2000/svg" class="size-5" viewBox="0 0 20 20" fill="currentColor">
+                    <path
+                      d="M9.049 2.927c.3-.921 1.603-.921 1.902 0l1.07 3.292a1 1 0 00.95.69h3.462c.969 0 1.371 1.24.588 1.81l-2.8 2.034a1 1 0 00-.364 1.118l1.07 3.292c.3.921-.755 1.688-1.54 1.118l-2.8-2.034a1 1 0 00-1.175 0l-2.8 2.034c-.784.57-1.838-.197-1.539-1.118l1.07-3.292a1 1 0 00-.364-1.118L2.98 8.72c-.783-.57-.38-1.81.588-1.81h3.461a1 1 0 00.951-.69l1.07-3.292z" />
+                  </svg>
+                  <svg xmlns="http://www.w3.org/2000/svg" class="size-5" viewBox="0 0 20 20" fill="currentColor">
+                    <path
+                      d="M9.049 2.927c.3-.921 1.603-.921 1.902 0l1.07 3.292a1 1 0 00.95.69h3.462c.969 0 1.371 1.24.588 1.81l-2.8 2.034a1 1 0 00-.364 1.118l1.07 3.292c.3.921-.755 1.688-1.54 1.118l-2.8-2.034a1 1 0 00-1.175 0l-2.8 2.034c-.784.57-1.838-.197-1.539-1.118l1.07-3.292a1 1 0 00-.364-1.118L2.98 8.72c-.783-.57-.38-1.81.588-1.81h3.461a1 1 0 00.951-.69l1.07-3.292z" />
+                  </svg>
+                  <svg xmlns="http://www.w3.org/2000/svg" class="size-5" viewBox="0 0 20 20" fill="currentColor">
+                    <path
+                      d="M9.049 2.927c.3-.921 1.603-.921 1.902 0l1.07 3.292a1 1 0 00.95.69h3.462c.969 0 1.371 1.24.588 1.81l-2.8 2.034a1 1 0 00-.364 1.118l1.07 3.292c.3.921-.755 1.688-1.54 1.118l-2.8-2.034a1 1 0 00-1.175 0l-2.8 2.034c-.784.57-1.838-.197-1.539-1.118l1.07-3.292a1 1 0 00-.364-1.118L2.98 8.72c-.783-.57-.38-1.81.588-1.81h3.461a1 1 0 00.951-.69l1.07-3.292z" />
+                  </svg>
+                  <svg xmlns="http://www.w3.org/2000/svg" class="size-5" viewBox="0 0 20 20" fill="currentColor">
+                    <path
+                      d="M9.049 2.927c.3-.921 1.603-.921 1.902 0l1.07 3.292a1 1 0 00.95.69h3.462c.969 0 1.371 1.24.588 1.81l-2.8 2.034a1 1 0 00-.364 1.118l1.07 3.292c.3.921-.755 1.688-1.54 1.118l-2.8-2.034a1 1 0 00-1.175 0l-2.8 2.034c-.784.57-1.838-.197-1.539-1.118l1.07-3.292a1 1 0 00-.364-1.118L2.98 8.72c-.783-.57-.38-1.81.588-1.81h3.461a1 1 0 00.951-.69l1.07-3.292z" />
+                  </svg>
+                  <svg xmlns="http://www.w3.org/2000/svg" class="size-5" viewBox="0 0 20 20" fill="currentColor">
+                    <path
+                      d="M9.049 2.927c.3-.921 1.603-.921 1.902 0l1.07 3.292a1 1 0 00.95.69h3.462c.969 0 1.371 1.24.588 1.81l-2.8 2.034a1 1 0 00-.364 1.118l1.07 3.292c.3.921-.755 1.688-1.54 1.118l-2.8-2.034a1 1 0 00-1.175 0l-2.8 2.034c-.784.57-1.838-.197-1.539-1.118l1.07-3.292a1 1 0 00-.364-1.118L2.98 8.72c-.783-.57-.38-1.81.588-1.81h3.461a1 1 0 00.951-.69l1.07-3.292z" />
+                  </svg>
+                </div>
+
+                <p class="mt-0.5 text-lg font-medium text-gray-900">Raju</p>
               </div>
-  
-              <p class="mt-0.5 text-lg font-medium text-gray-900">Raju</p>
             </div>
-          </div>
-  
-          <p class="mt-4 text-gray-700">
-            Lorem ipsum dolor sit, amet consectetur adipisicing elit. Culpa sit rerum incidunt, a
-            consequuntur recusandae ab saepe illo est quia obcaecati neque quibusdam eius accusamus
-            error officiis atque voluptates magnam!
-          </p>
-        </blockquote>
+
+            <p class="mt-4 text-gray-700">
+              Lorem ipsum dolor sit, amet consectetur adipisicing elit. Culpa sit rerum incidunt, a
+              consequuntur recusandae ab saepe illo est quia obcaecati neque quibusdam eius accusamus
+              error officiis atque voluptates magnam!
+            </p>
+          </blockquote>
+        </div>
       </div>
-    </div>
-  </section>
+    </section>
   </div>
   <footer class="border-t mt-32 ">
     <!-- Animated Footer Section Start -->
@@ -580,72 +497,70 @@
         <div class="footer__parralax-voiture"></div>
       </div>
 
-      <div class="container">
-        <footer class="mt-12 flex flex-col justify-around mx-[2%] md:flex-row items-center text-xl gap-6 text-[#0B427E] relative z-10">
-          <nav class="mb-4 md:mb-0">
-            <ul class="flex flex-wrap items-center justify-center md:justify-start space-x-8 mx-8">
-              <li>
-                <a href="#" class="hover:text-[#0B427E] transition-colors duration-300">Join Us</a>
-              </li>
-              <li>
-                <a href="#" class="hover:text-[#0B427E] transition-colors duration-300">Travel</a>
-              </li>
-              <li>
-                <a href="#" class="hover:text-[#0B427E] transition-colors duration-300">About Us</a>
-              </li>
-              <li>
-                <a href="#" class="hover:text-[#0B427E] transition-colors duration-300">Blogs</a>
-              </li>
-            </ul>
-          </nav>
-          <div class="flex items-center space-x-4 text-black">
-            <a href="https://www.facebook.com/" class="text-[#0B427E] hover:text-[#0B427E]">
-              <svg class="h-6 w-6" fill="currentColor" viewBox="0 0 24 24">
-                <path
-                  d="M24 12.073c0-6.627-5.373-12-12-12s-12 5.373-12 12c0 5.99 4.388 10.954 10.125 11.854v-8.385H7.078v-3.47h3.047V9.43c0-3.007 1.792-4.669 4.533-4.669 1.312 0 2.686.235 2.686.235v2.953H15.83c-1.491 0-1.956.925-1.956 1.874v2.25h3.328l-.532 3.47h-2.796v8.385C19.612 23.027 24 18.062 24 12.073z" />
-              </svg>
-            </a>
-            <a href="https://x.com/" class="text-[#0B427E] hover:text-[#0B427E]">
-              <svg class="h-6 w-6" fill="currentColor" viewBox="0 0 24 24">
-                <path
-                  d="M23.953 4.57a10 10 0 01-2.825.775 4.958 4.958 0 002.163-2.723c-.951.555-2.005.959-3.127 1.184a4.92 4.92 0 00-8.384 4.482C7.69 8.095 4.067 6.13 1.64 3.162a4.822 4.822 0 00-.666 2.475c0 1.71.87 3.213 2.188 4.096a4.904 4.904 0 01-2.228-.616v.06a4.923 4.923 0 003.946 4.827 4.996 4.996 0 01-2.212.085 4.936 4.936 0 004.604 3.417 9.867 9.867 0 01-6.102 2.105c-.39 0-.779-.023-1.17-.067a13.995 13.995 0 007.557 2.209c9.053 0 13.998-7.496 13.998-13.985 0-.21 0-.42-.015-.63A9.935 9.935 0 0024 4.59z" />
-              </svg>
-            </a>
-            <a href="https://www.instagram.com/" class="text-[#0B427E] hover:text-[#0B427E]">
-              <svg class="h-6 w-6" fill="currentColor" viewBox="0 0 24 24">
-                <path
-                  d="M12 0C8.74 0 8.333.015 7.053.072 5.775.132 4.905.333 4.14.63c-.789.306-1.459.717-2.126 1.384S.935 3.35.63 4.14C.333 4.905.131 5.775.072 7.053.012 8.333 0 8.74 0 12s.015 3.667.072 4.947c.06 1.277.261 2.148.558 2.913.306.788.717 1.459 1.384 2.126.667.666 1.336 1.079 2.126 1.384.766.296 1.636.499 2.913.558C8.333 23.988 8.74 24 12 24s3.667-.015 4.947-.072c1.277-.06 2.148-.262 2.913-.558.788-.306 1.459-.718 2.126-1.384.666-.667 1.079-1.335 1.384-2.126.296-.765.499-1.636.558-2.913.06-1.28.072-1.687.072-4.947s-.015-3.667-.072-4.947c-.06-1.277-.262-2.149-.558-2.913-.306-.789-.718-1.459-1.384-2.126C21.319 1.347 20.651.935 19.86.63c-.765-.297-1.636-.499-2.913-.558C15.667.012 15.26 0 12 0zm0 2.16c3.203 0 3.585.016 4.85.071 1.17.055 1.805.249 2.227.415.562.217.96.477 1.382.896.419.42.679.819.896 1.381.164.422.36 1.057.413 2.227.057 1.266.07 1.646.07 4.85s-.015 3.585-.074 4.85c-.061 1.17-.256 1.805-.421 2.227-.224.562-.479.96-.899 1.382-.419.419-.824.679-1.38.896-.42.164-1.065.36-2.235.413-1.274.057-1.649.07-4.859.07-3.211 0-3.586-.015-4.859-.074-1.171-.061-1.816-.256-2.236-.421-.569-.224-.96-.479-1.379-.899-.421-.419-.69-.824-.9-1.38-.165-.42-.359-1.065-.42-2.235-.045-1.26-.061-1.649-.061-4.844 0-3.196.016-3.586.061-4.861.061-1.17.255-1.814.42-2.234.21-.57.479-.96.9-1.381.419-.419.81-.689 1.379-.898.42-.166 1.051-.361 2.221-.421 1.275-.045 1.65-.06 4.859-.06l.045.03zm0 3.678c-3.405 0-6.162 2.76-6.162 6.162 0 3.405 2.76 6.162 6.162 6.162 3.405 0 6.162-2.76 6.162-6.162 0-3.405-2.76-6.162-6.162-6.162zM12 16c-2.21 0-4-1.79-4-4s1.79-4 4-4 4 1.79 4 4-1.79 4-4 4zm7.846-10.405c0 .795-.646 1.44-1.44 1.44-.795 0-1.44-.646-1.44-1.44 0-.794.646-1.439 1.44-1.439.793-.001 1.44.645 1.44 1.439z" />
-              </svg>
-            </a>
-          </div>
-          <div class="text-4xl font-playfair text-white mt-4 md:mt-0">
-            2024
-          </div>
-        </footer>
-      </div>
-      <div class="container mt-8 text-center text-gray-600 text-white mx-auto">
-        <div class="flex justify-center">
-          <ul class="flex flex-wrap items-center justify-center space-x-6 text-sm">
+    <div class="container">
+      <footer
+        class="mt-12 flex flex-col justify-around mx-[2%] md:flex-row items-center text-xl gap-6 text-[#0B427E] relative z-10">
+        <nav class="mb-4 md:mb-0">
+          <ul class="flex flex-wrap items-center justify-center md:justify-start space-x-8 mx-8">
             <li>
-              <a href="#" class="hover:text-[#0B427E] transition-colors duration-300">© 2024 TripWithEase, Inc.</a>
+              <a href="#" class="hover:text-[#0B427E] transition-colors duration-300">Join Us</a>
             </li>
             <li>
-              <a href="#" class="hover:text-[#0B427E] transition-colors duration-300">Terms</a>
+              <a href="#" class="hover:text-[#0B427E] transition-colors duration-300">Travel</a>
             </li>
             <li>
-              <a href="#" class="hover:text-[#0B427E] transition-colors duration-300">Sitemap</a>
+              <a href="#" class="hover:text-[#0B427E] transition-colors duration-300">About Us</a>
             </li>
             <li>
-              <a href="#" class="hover:text-[#0B427E] transition-colors duration-300">Privacy</a>
+              <a href="#" class="hover:text-[#0B427E] transition-colors duration-300">Blogs</a>
             </li>
           </ul>
+        </nav>
+        <div class="flex items-center space-x-4 text-black">
+          <a href="https://www.facebook.com/" class="text-[#0B427E] hover:text-[#0B427E]">
+            <svg class="h-6 w-6" fill="currentColor" viewBox="0 0 24 24">
+              <path
+                d="M24 12.073c0-6.627-5.373-12-12-12s-12 5.373-12 12c0 5.99 4.388 10.954 10.125 11.854v-8.385H7.078v-3.47h3.047V9.43c0-3.007 1.792-4.669 4.533-4.669 1.312 0 2.686.235 2.686.235v2.953H15.83c-1.491 0-1.956.925-1.956 1.874v2.25h3.328l-.532 3.47h-2.796v8.385C19.612 23.027 24 18.062 24 12.073z" />
+            </svg>
+          </a>
+          <a href="https://x.com/" class="text-[#0B427E] hover:text-[#0B427E]">
+            <svg class="h-6 w-6" fill="currentColor" viewBox="0 0 24 24">
+              <path
+                d="M23.953 4.57a10 10 0 01-2.825.775 4.958 4.958 0 002.163-2.723c-.951.555-2.005.959-3.127 1.184a4.92 4.92 0 00-8.384 4.482C7.69 8.095 4.067 6.13 1.64 3.162a4.822 4.822 0 00-.666 2.475c0 1.71.87 3.213 2.188 4.096a4.904 4.904 0 01-2.228-.616v.06a4.923 4.923 0 003.946 4.827 4.996 4.996 0 01-2.212.085 4.936 4.936 0 004.604 3.417 9.867 9.867 0 01-6.102 2.105c-.39 0-.779-.023-1.17-.067a13.995 13.995 0 007.557 2.209c9.053 0 13.998-7.496 13.998-13.985 0-.21 0-.42-.015-.63A9.935 9.935 0 0024 4.59z" />
+            </svg>
+          </a>
+          <a href="https://www.instagram.com/" class="text-[#0B427E] hover:text-[#0B427E]">
+            <svg class="h-6 w-6" fill="currentColor" viewBox="0 0 24 24">
+              <path
+                d="M12 0C8.74 0 8.333.015 7.053.072 5.775.132 4.905.333 4.14.63c-.789.306-1.459.717-2.126 1.384S.935 3.35.63 4.14C.333 4.905.131 5.775.072 7.053.012 8.333 0 8.74 0 12s.015 3.667.072 4.947c.06 1.277.261 2.148.558 2.913.306.788.717 1.459 1.384 2.126.667.666 1.336 1.079 2.126 1.384.766.296 1.636.499 2.913.558C8.333 23.988 8.74 24 12 24s3.667-.015 4.947-.072c1.277-.06 2.148-.262 2.913-.558.788-.306 1.459-.718 2.126-1.384.666-.667 1.079-1.335 1.384-2.126.296-.765.499-1.636.558-2.913.06-1.28.072-1.687.072-4.947s-.015-3.667-.072-4.947c-.06-1.277-.262-2.149-.558-2.913-.306-.789-.718-1.459-1.384-2.126C21.319 1.347 20.651.935 19.86.63c-.765-.297-1.636-.499-2.913-.558C15.667.012 15.26 0 12 0zm0 2.16c3.203 0 3.585.016 4.85.071 1.17.055 1.805.249 2.227.415.562.217.96.477 1.382.896.419.42.679.819.896 1.381.164.422.36 1.057.413 2.227.057 1.266.07 1.646.07 4.85s-.015 3.585-.074 4.85c-.061 1.17-.256 1.805-.421 2.227-.224.562-.479.96-.899 1.382-.419.419-.824.679-1.38.896-.42.164-1.065.36-2.235.413-1.274.057-1.649.07-4.859.07-3.211 0-3.586-.015-4.859-.074-1.171-.061-1.816-.256-2.236-.421-.569-.224-.96-.479-1.379-.899-.421-.419-.69-.824-.9-1.38-.165-.42-.359-1.065-.42-2.235-.045-1.26-.061-1.649-.061-4.844 0-3.196.016-3.586.061-4.861.061-1.17.255-1.814.42-2.234.21-.57.479-.96.9-1.381.419-.419.81-.689 1.379-.898.42-.166 1.051-.361 2.221-.421 1.275-.045 1.65-.06 4.859-.06l.045.03zm0 3.678c-3.405 0-6.162 2.76-6.162 6.162 0 3.405 2.76 6.162 6.162 6.162 3.405 0 6.162-2.76 6.162-6.162 0-3.405-2.76-6.162-6.162-6.162zM12 16c-2.21 0-4-1.79-4-4s1.79-4 4-4 4 1.79 4 4-1.79 4-4 4zm7.846-10.405c0 .795-.646 1.44-1.44 1.44-.795 0-1.44-.646-1.44-1.44 0-.794.646-1.439 1.44-1.439.793-.001 1.44.645 1.44 1.439z" />
+            </svg>
+          </a>
         </div>
+        <div class="text-4xl font-playfair text-white mt-4 md:mt-0">
+          2024
+        </div>
+      </footer>
+    </div>
+    <div class="container mt-8 text-center text-gray-600 text-white mx-auto">
+      <div class="flex justify-center">
+        <ul class="flex flex-wrap items-center justify-center space-x-6 text-sm">
+          <li>
+            <a href="#" class="hover:text-[#0B427E] transition-colors duration-300">© 2024 TripWithEase, Inc.</a>
+          </li>
+          <li>
+            <a href="#" class="hover:text-[#0B427E] transition-colors duration-300">Terms</a>
+          </li>
+          <li>
+            <a href="#" class="hover:text-[#0B427E] transition-colors duration-300">Sitemap</a>
+          </li>
+          <li>
+            <a href="#" class="hover:text-[#0B427E] transition-colors duration-300">Privacy</a>
+          </li>
+        </ul>
       </div>
-    </footer>
-    <!-- Animated Footer Section End -->
+    </div>
   </footer>
-
-    <!-- Animated Footer Section End -->
+  <!-- Animated Footer Section End -->
   </footer>
     <script src="/javascripts/hotelScript.js"></script>
   </body>
