@@ -1,52 +1,47 @@
 <!DOCTYPE html>
 <html lang="en">
+
 <head>
-    <meta charset="UTF-8">
-    <meta name="viewport" content="width=device-width, initial-scale=1.0">
-    <title>India in all its glory - TripWithEase</title>
-    <script src="https://cdn.tailwindcss.com"></script>
-    <link href="https://fonts.googleapis.com/css2?family=Inter:wght@400;500;600;700&display=swap" rel="stylesheet">
-    <link rel="stylesheet" href="/stylesheets/footerAnimateStyle.css">
-    <style>
-        body {
-            font-family: 'Inter', sans-serif;
-        }
-    </style>
+  <meta charset="UTF-8" />
+  <meta name="viewport" content="width=device-width, initial-scale=1.0" />
+  <title>India in all its glory - TripWithEase</title>
+  <script src="https://cdn.tailwindcss.com"></script>
+  <link href="https://fonts.googleapis.com/css2?family=Inter:wght@400;500;600;700&display=swap" rel="stylesheet" />
+  <link rel="stylesheet" href="/stylesheets/footerAnimateStyle.css" />
+  <script>
+    tailwind.config = {
+      theme: {
+        extend: {
+          fontFamily: {
+            playfair: ['"Playfair Display"', "serif"],
+            poppins: ["Poppins", "sans-serif"],
+          },
+        },
+      },
+    };
+  </script>
 </head>
-<body class="min-h-screen font-poppins text-[#0B427E] ">
-    <div class="container mx-auto px-4 py-8 relative overflow-hidden">
-        <header class="flex justify-between items-center mb-12 relative z-10">
-            <div class="flex items-center">
-              <img
-                src="/images/TripWithEase.png"
-                alt="TripWithEase Logo"
-                class="w-24 h-24">
-              <h1
-                class="text-3xl font-playfair font-bold text-[#0B427E] leading-tight"
-              >
-                TripWithEase
-              </h1>
-            </div>
-            <div class="hidden md:flex items-center space-x-4">
-              <a
-                href="/hotelsAndHouses"
-                class="rounded-full px-4 py-2 bg-white bg-opacity-50 text-[#0B427E] hover:text-[#0B427E] transition-colors duration-300 flex items-center space-x-2"
-              >
-                <span>Hotels & Houses</span>
-                <svg
-                  xmlns="http://www.w3.org/2000/svg"
-                  class="h-5 w-5"
-                  viewBox="0 0 20 20"
-                  fill="currentColor"
-                >
-                  <path
-                    fill-rule="evenodd"
-                    d="M4.083 9h1.946c.089-1.546.383-2.97.837-4.118A6.004 6.004 0 004.083 9zM10 2a8 8 0 100 16 8 8 0 000-16zm0 2c-.076 0-.232.032-.465.262-.238.234-.497.623-.737 1.182-.389.907-.673 2.142-.766 3.556h3.936c-.093-1.414-.377-2.649-.766-3.556-.24-.56-.5-.948-.737-1.182C10.232 4.032 10.076 4 10 4zm3.971 5c-.089-1.546-.383-2.97-.837-4.118A6.004 6.004 0 0115.917 9h-1.946zm-2.003 2H8.032c.093 1.414.377 2.649.766 3.556.24.56.5.948.737 1.182.233.23.389.262.465.262.076 0 .232-.032.465-.262.238-.234.498-.623.737-1.182.389-.907.673-2.142.766-3.556zm1.166 4.118c.454-1.147.748-2.572.837-4.118h1.946a6.004 6.004 0 01-2.783 4.118zm-6.268 0C6.412 13.97 6.118 12.546 6.03 11H4.083a6.004 6.004 0 002.783 4.118z"
-                    clip-rule="evenodd"
-                  />
-                </svg>
-              </a>
-              <!-- <div class="relative">
+
+<body class="min-h-screen font-poppins text-[#0B427E]">
+  <div class="container mx-auto px-4 py-8 relative overflow-hidden">
+    <header class="flex justify-between items-center mb-12 relative z-10">
+      <div class="flex items-center">
+        <img src="/images/TripWithEase.png" alt="TripWithEase Logo" class="w-24 h-24" />
+        <h1 class="text-3xl font-playfair font-bold text-[#0B427E] leading-tight">
+          TripWithEase
+        </h1>
+      </div>
+      <div class="hidden md:flex items-center space-x-4">
+        <a href="/hotelsAndHouses"
+          class="rounded-full px-4 py-2 bg-white bg-opacity-50 text-[#0B427E] hover:text-[#0B427E] transition-colors duration-300 flex items-center space-x-2">
+          <span>Hotels & Houses</span>
+          <svg xmlns="http://www.w3.org/2000/svg" class="h-5 w-5" viewBox="0 0 20 20" fill="currentColor">
+            <path fill-rule="evenodd"
+              d="M4.083 9h1.946c.089-1.546.383-2.97.837-4.118A6.004 6.004 0 004.083 9zM10 2a8 8 0 100 16 8 8 0 000-16zm0 2c-.076 0-.232.032-.465.262-.238.234-.497.623-.737 1.182-.389.907-.673 2.142-.766 3.556h3.936c-.093-1.414-.377-2.649-.766-3.556-.24-.56-.5-.948-.737-1.182C10.232 4.032 10.076 4 10 4zm3.971 5c-.089-1.546-.383-2.97-.837-4.118A6.004 6.004 0 0115.917 9h-1.946zm-2.003 2H8.032c.093 1.414.377 2.649.766 3.556.24.56.5.948.737 1.182.233.23.389.262.465.262.076 0 .232-.032.465-.262.238-.234.498-.623.737-1.182.389-.907.673-2.142.766-3.556zm1.166 4.118c.454-1.147.748-2.572.837-4.118h1.946a6.004 6.004 0 01-2.783 4.118zm-6.268 0C6.412 13.97 6.118 12.546 6.03 11H4.083a6.004 6.004 0 002.783 4.118z"
+              clip-rule="evenodd" />
+          </svg>
+        </a>
+        <!-- <div class="relative">
                 <a href="/login">
                 <button
                   class="main-button flex items-center space-x-2 bg-white bg-opacity-50 rounded-full px-4 py-2 text-[#0B427E]"
@@ -78,189 +73,210 @@
                 </button>
               </a>
               </div> -->
-            </div>
-          </header>
+      </div>
+    </header>
 
     <main class="container mx-auto px-4 py-8">
-        
-        <div class="flex justify-center  space-x-16 overflow-x-auto pb-4 mb-8 bg-[#1B518D] bg-opacity-10 rounded-full p-6  ">
+      <div class="flex justify-center space-x-16 overflow-x-auto pb-4 mb-8 bg-[#1B518D] bg-opacity-10 rounded-full p-6">
+        <button class="flex flex-col items-center min-w-[64px]">
+          <span class="text-2xl mb-1">❄️</span>
+          <span class="text-xs">Arctic</span>
+        </button>
+        <button class="flex flex-col items-center min-w-[64px]">
+          <span class="text-2xl mb-1">🏞️</span>
+          <span class="text-xs">Amazing views</span>
+        </button>
+        <button class="flex flex-col items-center min-w-[64px]">
+          <span class="text-2xl mb-1">🏙️</span>
+          <span class="text-xs">Iconic cities</span>
+        </button>
+        <button class="flex flex-col items-center min-w-[64px]">
+          <span class="text-2xl mb-1">🏰</span>
+          <span class="text-xs">Mansions</span>
+        </button>
+        <button class="flex flex-col items-center min-w-[64px]">
+          <span class="text-2xl mb-1">⛵</span>
+          <span class="text-xs">Boats</span>
+        </button>
+        <button class="flex flex-col items-center min-w-[64px]">
+          <span class="text-2xl mb-1">🏝️</span>
+          <span class="text-xs">Islands</span>
+        </button>
+        <button class="flex flex-col items-center min-w-[64px]">
+          <span class="text-2xl mb-1">🌲</span>
+          <span class="text-xs">Cabins</span>
+        </button>
+        <button class="flex flex-col items-center min-w-[64px]">
+          <span class="text-2xl mb-1">🏖️</span>
+          <span class="text-xs">Lakefront</span>
+        </button>
+      </div>
 
-            <button class="flex flex-col items-center min-w-[64px]">
-                <span class="text-2xl mb-1">❄️</span>
-                <span class="text-xs">Arctic</span>
-            </button>
-            <button class="flex flex-col items-center min-w-[64px]">
-                <span class="text-2xl mb-1">🏞️</span>
-                <span class="text-xs">Amazing views</span>
-            </button>
-            <button class="flex flex-col items-center min-w-[64px]">
-                <span class="text-2xl mb-1">🏙️</span>
-                <span class="text-xs">Iconic cities</span>
-            </button>
-            <button class="flex flex-col items-center min-w-[64px]">
-                <span class="text-2xl mb-1">🏰</span>
-                <span class="text-xs">Mansions</span>
-            </button>
-            <button class="flex flex-col items-center min-w-[64px]">
-                <span class="text-2xl mb-1">⛵</span>
-                <span class="text-xs">Boats</span>
-            </button>
-            <button class="flex flex-col items-center min-w-[64px]">
-                <span class="text-2xl mb-1">🏝️</span>
-                <span class="text-xs">Islands</span>
-            </button>
-            <button class="flex flex-col items-center min-w-[64px]">
-                <span class="text-2xl mb-1">🌲</span>
-                <span class="text-xs">Cabins</span>
-            </button>
-            <button class="flex flex-col items-center min-w-[64px]">
-                <span class="text-2xl mb-1">🏖️</span>
-                <span class="text-xs">Lakefront</span>
-            </button>
+      <div class="flex justify-between items-center mb-4">
+        <h2 class="text-lg font-semibold">Featured Places & Rooms</h2>
+      </div>
+
+      <div class="grid grid-cols-1 md:grid-cols-2 lg:grid-cols-4 gap-6 mb-8">
+        <div class="rounded-xl overflow-hidden shadow-lg">
+          <a href="/hotel">
+            <img src="/images/sample-pic.avif" alt="New Delhi, India" class="w-full h-48 object-cover" />
+            <div class="p-4">
+              <h3 class="font-semibold">New Delhi, India</h3>
+              <p class="text-sm text-gray-600">903 kilometers away</p>
+              <p class="text-sm text-gray-600">5 nights · Apr 1-6</p>
+              <p class="text-sm font-semibold mt-2">
+                $2,160 total before taxes
+              </p>
+            </div>
+          </a>
         </div>
-
-        <div class="flex justify-between items-center mb-4">
-            <h2 class="text-lg font-semibold">Featured Places & Rooms</h2>
+        <div class="rounded-xl overflow-hidden shadow-lg">
+          <a href="/hotel">
+            <img src="/images/sample-pic.avif" alt="New Delhi, India" class="w-full h-48 object-cover" />
+            <div class="p-4">
+              <h3 class="font-semibold">New Delhi, India</h3>
+              <p class="text-sm text-gray-600">903 kilometers away</p>
+              <p class="text-sm text-gray-600">5 nights · Apr 1-6</p>
+              <p class="text-sm font-semibold mt-2">
+                $2,160 total before taxes
+              </p>
+            </div>
+          </a>
         </div>
-
-        <div class="grid grid-cols-1 md:grid-cols-2 lg:grid-cols-4 gap-6 mb-8">
-            <div class="rounded-xl overflow-hidden shadow-lg">
-                <a href="/hotel">
-                <img src="/images/sample-pic.avif" alt="New Delhi, India" class="w-full h-48 object-cover">
-                <div class="p-4">
-                    <h3 class="font-semibold">New Delhi, India</h3>
-                    <p class="text-sm text-gray-600">903 kilometers away</p>
-                    <p class="text-sm text-gray-600">5 nights · Apr 1-6</p>
-                    <p class="text-sm font-semibold mt-2">$2,160 total before taxes</p>
-                </div>
-            </a>
+        <div class="rounded-xl overflow-hidden shadow-lg">
+          <a href="/hotel">
+            <img src="/images/sample-pic.avif" alt="New Delhi, India" class="w-full h-48 object-cover" />
+            <div class="p-4">
+              <h3 class="font-semibold">New Delhi, India</h3>
+              <p class="text-sm text-gray-600">903 kilometers away</p>
+              <p class="text-sm text-gray-600">5 nights · Apr 1-6</p>
+              <p class="text-sm font-semibold mt-2">
+                $2,160 total before taxes
+              </p>
             </div>
-            <div class="rounded-xl overflow-hidden shadow-lg">
-                <a href="/hotel">
-                <img src="/images/sample-pic.avif" alt="New Delhi, India" class="w-full h-48 object-cover">
-                <div class="p-4">
-                    <h3 class="font-semibold">New Delhi, India</h3>
-                    <p class="text-sm text-gray-600">903 kilometers away</p>
-                    <p class="text-sm text-gray-600">5 nights · Apr 1-6</p>
-                    <p class="text-sm font-semibold mt-2">$2,160 total before taxes</p>
-                </div>
-            </a>
-            </div>
-            <div class="rounded-xl overflow-hidden shadow-lg">
-                <a href="/hotel">
-                <img src="/images/sample-pic.avif" alt="New Delhi, India" class="w-full h-48 object-cover">
-                <div class="p-4">
-                    <h3 class="font-semibold">New Delhi, India</h3>
-                    <p class="text-sm text-gray-600">903 kilometers away</p>
-                    <p class="text-sm text-gray-600">5 nights · Apr 1-6</p>
-                    <p class="text-sm font-semibold mt-2">$2,160 total before taxes</p>
-                </div>
-            </a>
-            </div>
-            <div class="rounded-xl overflow-hidden shadow-lg">
-                <a href="/hotel">
-                <img src="/images/sample-pic.avif" alt="New Delhi, India" class="w-full h-48 object-cover">
-                <div class="p-4">
-                    <h3 class="font-semibold">New Delhi, India</h3>
-                    <p class="text-sm text-gray-600">903 kilometers away</p>
-                    <p class="text-sm text-gray-600">5 nights · Apr 1-6</p>
-                    <p class="text-sm font-semibold mt-2">$2,160 total before taxes</p>
-                </div>
-            </a>
-            </div>
-            <div class="rounded-xl overflow-hidden shadow-lg">
-                <a href="/hotel">
-                <img src="/images/sample-pic.avif" alt="New Delhi, India" class="w-full h-48 object-cover">
-                <div class="p-4">
-                    <h3 class="font-semibold">New Delhi, India</h3>
-                    <p class="text-sm text-gray-600">903 kilometers away</p>
-                    <p class="text-sm text-gray-600">5 nights · Apr 1-6</p>
-                    <p class="text-sm font-semibold mt-2">$2,160 total before taxes</p>
-                </div>
-            </a>
-            </div>
-            <div class="rounded-xl overflow-hidden shadow-lg">
-                <a href="/hotel">
-                <img src="/images/sample-pic.avif" alt="New Delhi, India" class="w-full h-48 object-cover">
-                <div class="p-4">
-                    <h3 class="font-semibold">New Delhi, India</h3>
-                    <p class="text-sm text-gray-600">903 kilometers away</p>
-                    <p class="text-sm text-gray-600">5 nights · Apr 1-6</p>
-                    <p class="text-sm font-semibold mt-2">$2,160 total before taxes</p>
-                </div>
-            </a>
-            </div>
-            <div class="rounded-xl overflow-hidden shadow-lg">
-                <a href="/hotel">
-                <img src="/images/sample-pic.avif" alt="New Delhi, India" class="w-full h-48 object-cover">
-                <div class="p-4">
-                    <h3 class="font-semibold">New Delhi, India</h3>
-                    <p class="text-sm text-gray-600">903 kilometers away</p>
-                    <p class="text-sm text-gray-600">5 nights · Apr 1-6</p>
-                    <p class="text-sm font-semibold mt-2">$2,160 total before taxes</p>
-                </div>
-            </a>
-            </div>
-            <div class="rounded-xl overflow-hidden shadow-lg">
-                <a href="/hotel">
-                <img src="/images/sample-pic.avif" alt="New Delhi, India" class="w-full h-48 object-cover">
-                <div class="p-4">
-                    <h3 class="font-semibold">New Delhi, India</h3>
-                    <p class="text-sm text-gray-600">903 kilometers away</p>
-                    <p class="text-sm text-gray-600">5 nights · Apr 1-6</p>
-                    <p class="text-sm font-semibold mt-2">$2,160 total before taxes</p>
-                </div>
-            </a>
-            </div>
-            <div class="rounded-xl overflow-hidden shadow-lg">
-                <a href="/hotel">
-                <img src="/images/sample-pic.avif" alt="New Delhi, India" class="w-full h-48 object-cover">
-                <div class="p-4">
-                    <h3 class="font-semibold">New Delhi, India</h3>
-                    <p class="text-sm text-gray-600">903 kilometers away</p>
-                    <p class="text-sm text-gray-600">5 nights · Apr 1-6</p>
-                    <p class="text-sm font-semibold mt-2">$2,160 total before taxes</p>
-                </div>
-            </a>
-            </div>
-            <div class="rounded-xl overflow-hidden shadow-lg">
-                <a href="/hotel">
-                <img src="/images/sample-pic.avif" alt="New Delhi, India" class="w-full h-48 object-cover">
-                <div class="p-4">
-                    <h3 class="font-semibold">New Delhi, India</h3>
-                    <p class="text-sm text-gray-600">903 kilometers away</p>
-                    <p class="text-sm text-gray-600">5 nights · Apr 1-6</p>
-                    <p class="text-sm font-semibold mt-2">$2,160 total before taxes</p>
-                </div>
-            </a>
-            </div>
-            <div class="rounded-xl overflow-hidden shadow-lg">
-                <a href="/hotel">
-                <img src="/images/sample-pic.avif" alt="New Delhi, India" class="w-full h-48 object-cover">
-                <div class="p-4">
-                    <h3 class="font-semibold">New Delhi, India</h3>
-                    <p class="text-sm text-gray-600">903 kilometers away</p>
-                    <p class="text-sm text-gray-600">5 nights · Apr 1-6</p>
-                    <p class="text-sm font-semibold mt-2">$2,160 total before taxes</p>
-                </div>
-            </a>
-            </div>
-            <div class="rounded-xl overflow-hidden shadow-lg">
-                <a href="/hotel">
-                <img src="/images/sample-pic.avif" alt="New Delhi, India" class="w-full h-48 object-cover">
-                <div class="p-4">
-                    <h3 class="font-semibold">New Delhi, India</h3>
-                    <p class="text-sm text-gray-600">903 kilometers away</p>
-                    <p class="text-sm text-gray-600">5 nights · Apr 1-6</p>
-                    <p class="text-sm font-semibold mt-2">$2,160 total before taxes</p>
-                </div>
-            </a>
-            </div>
-
+          </a>
         </div>
+        <div class="rounded-xl overflow-hidden shadow-lg">
+          <a href="/hotel">
+            <img src="/images/sample-pic.avif" alt="New Delhi, India" class="w-full h-48 object-cover" />
+            <div class="p-4">
+              <h3 class="font-semibold">New Delhi, India</h3>
+              <p class="text-sm text-gray-600">903 kilometers away</p>
+              <p class="text-sm text-gray-600">5 nights · Apr 1-6</p>
+              <p class="text-sm font-semibold mt-2">
+                $2,160 total before taxes
+              </p>
+            </div>
+          </a>
+        </div>
+        <div class="rounded-xl overflow-hidden shadow-lg">
+          <a href="/hotel">
+            <img src="/images/sample-pic.avif" alt="New Delhi, India" class="w-full h-48 object-cover" />
+            <div class="p-4">
+              <h3 class="font-semibold">New Delhi, India</h3>
+              <p class="text-sm text-gray-600">903 kilometers away</p>
+              <p class="text-sm text-gray-600">5 nights · Apr 1-6</p>
+              <p class="text-sm font-semibold mt-2">
+                $2,160 total before taxes
+              </p>
+            </div>
+          </a>
+        </div>
+        <div class="rounded-xl overflow-hidden shadow-lg">
+          <a href="/hotel">
+            <img src="/images/sample-pic.avif" alt="New Delhi, India" class="w-full h-48 object-cover" />
+            <div class="p-4">
+              <h3 class="font-semibold">New Delhi, India</h3>
+              <p class="text-sm text-gray-600">903 kilometers away</p>
+              <p class="text-sm text-gray-600">5 nights · Apr 1-6</p>
+              <p class="text-sm font-semibold mt-2">
+                $2,160 total before taxes
+              </p>
+            </div>
+          </a>
+        </div>
+        <div class="rounded-xl overflow-hidden shadow-lg">
+          <a href="/hotel">
+            <img src="/images/sample-pic.avif" alt="New Delhi, India" class="w-full h-48 object-cover" />
+            <div class="p-4">
+              <h3 class="font-semibold">New Delhi, India</h3>
+              <p class="text-sm text-gray-600">903 kilometers away</p>
+              <p class="text-sm text-gray-600">5 nights · Apr 1-6</p>
+              <p class="text-sm font-semibold mt-2">
+                $2,160 total before taxes
+              </p>
+            </div>
+          </a>
+        </div>
+        <div class="rounded-xl overflow-hidden shadow-lg">
+          <a href="/hotel">
+            <img src="/images/sample-pic.avif" alt="New Delhi, India" class="w-full h-48 object-cover" />
+            <div class="p-4">
+              <h3 class="font-semibold">New Delhi, India</h3>
+              <p class="text-sm text-gray-600">903 kilometers away</p>
+              <p class="text-sm text-gray-600">5 nights · Apr 1-6</p>
+              <p class="text-sm font-semibold mt-2">
+                $2,160 total before taxes
+              </p>
+            </div>
+          </a>
+        </div>
+        <div class="rounded-xl overflow-hidden shadow-lg">
+          <a href="/hotel">
+            <img src="/images/sample-pic.avif" alt="New Delhi, India" class="w-full h-48 object-cover" />
+            <div class="p-4">
+              <h3 class="font-semibold">New Delhi, India</h3>
+              <p class="text-sm text-gray-600">903 kilometers away</p>
+              <p class="text-sm text-gray-600">5 nights · Apr 1-6</p>
+              <p class="text-sm font-semibold mt-2">
+                $2,160 total before taxes
+              </p>
+            </div>
+          </a>
+        </div>
+        <div class="rounded-xl overflow-hidden shadow-lg">
+          <a href="/hotel">
+            <img src="/images/sample-pic.avif" alt="New Delhi, India" class="w-full h-48 object-cover" />
+            <div class="p-4">
+              <h3 class="font-semibold">New Delhi, India</h3>
+              <p class="text-sm text-gray-600">903 kilometers away</p>
+              <p class="text-sm text-gray-600">5 nights · Apr 1-6</p>
+              <p class="text-sm font-semibold mt-2">
+                $2,160 total before taxes
+              </p>
+            </div>
+          </a>
+        </div>
+        <div class="rounded-xl overflow-hidden shadow-lg">
+          <a href="/hotel">
+            <img src="/images/sample-pic.avif" alt="New Delhi, India" class="w-full h-48 object-cover" />
+            <div class="p-4">
+              <h3 class="font-semibold">New Delhi, India</h3>
+              <p class="text-sm text-gray-600">903 kilometers away</p>
+              <p class="text-sm text-gray-600">5 nights · Apr 1-6</p>
+              <p class="text-sm font-semibold mt-2">
+                $2,160 total before taxes
+              </p>
+            </div>
+          </a>
+        </div>
+        <div class="rounded-xl overflow-hidden shadow-lg">
+          <a href="/hotel">
+            <img src="/images/sample-pic.avif" alt="New Delhi, India" class="w-full h-48 object-cover" />
+            <div class="p-4">
+              <h3 class="font-semibold">New Delhi, India</h3>
+              <p class="text-sm text-gray-600">903 kilometers away</p>
+              <p class="text-sm text-gray-600">5 nights · Apr 1-6</p>
+              <p class="text-sm font-semibold mt-2">
+                $2,160 total before taxes
+              </p>
+            </div>
+          </a>
+        </div>
+      </div>
     </main>
-</div>
-<footer class="border-t mt-32 ">
+  </div>
+  <footer class="border-t mt-32">
     <!-- Animated Footer Section Start -->
     <footer class="footer text-center text-sm text-gray-600">
       <div class="footer__parralax">
@@ -272,7 +288,8 @@
       </div>
 
       <div class="container">
-        <footer class="mt-12 flex flex-col justify-around mx-[2%] md:flex-row items-center text-xl gap-6 text-[#0B427E] relative z-10">
+        <footer
+          class="mt-12 flex flex-col justify-around mx-[2%] md:flex-row items-center text-xl gap-6 text-[#0B427E] relative z-10">
           <nav class="mb-4 md:mb-0">
             <ul class="flex flex-wrap items-center justify-center md:justify-start space-x-8 mx-8">
               <li>
@@ -335,6 +352,6 @@
     </footer>
     <!-- Animated Footer Section End -->
   </footer>
-
 </body>
+
 </html>
