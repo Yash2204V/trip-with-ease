@@ -23,6 +23,7 @@
   </head>
   <body class="min-h-screen font-poppins text-[#0B427E]">
   <div class="container mx-auto px-4 py-8 relative overflow-hidden">
+    
     <header class="flex justify-between items-center mb-12 relative z-10">
       <div class="flex items-center">
         <img
@@ -89,7 +90,7 @@
       </div>
     </header>
 
-    <main class="container mx-auto px-4 py-8">
+    <main class="container mx-auto px-4 py-8 pb-4">
       <h1 class="text-3xl font-bold mb-4">
         Old Tbilisi 2BR Apt with Terrace - By Wehost
       </h1>
@@ -194,7 +195,37 @@
           filter: saturate(150%) brightness(95%);"></div>
       </div>
         <!-- Map Ends-->
+                      <!-- Comment Section Start-->
+
+
+  <div class="editor max-w-4xl flex flex-col text-gray-800 border border-gray-300 p-4 shadow-lg mt-12">
+    <div class="heading text-center font-bold text-3xl text-[#0B427E] mb-4">Comments Here</div>
+    <textarea class="description bg-gray-100 sec p-3 h-60 border border-gray-300 outline-none" spellcheck="false" placeholder="Describe everything about this post here"></textarea>
+    <!-- icons -->
+    <fieldset class="starability-slot mt-6">
+      <input type="radio" id="no-rate" class="input-no-rate" name="review[rating]" value="1" checked aria-label="No rating." />
+      <input type="radio" id="first-rate1" name="review[rating]" value="1" />
+      <label for="first-rate1" title="Terrible">1 star</label>
+      <input type="radio" id="first-rate2" name="review[rating]" value="2" />
+      <label for="first-rate2" title="Not good">2 stars</label>
+      <input type="radio" id="first-rate3" name="review[rating]" value="3" />
+      <label for="first-rate3" title="Average">3 stars</label>
+      <input type="radio" id="first-rate4" name="review[rating]" value="4" />
+      <label for="first-rate4" title="Very good">4 stars</label>
+      <input type="radio" id="first-rate5" name="review[rating]" value="5" />
+      <label for="first-rate5" title="Amazing">5 stars</label>
+    </fieldset>
+    <!-- buttons -->
+    <div class="buttons flex justify-end">
+      <!-- <div class="btn border border-gray-300 p-1 px-4 font-semibold cursor-pointer text-gray-500 ml-auto">Cancel</div> -->
+      <div class="btn border rounded-lg border-indigo-500 p-1 px-5 py-2 font-semibold cursor-pointer text-gray-200 ml-2 bg-indigo-500">
+        <i class="fa-solid fa-paper-plane"></i>
+      </div>
+    </div>
+  </div>
+                  <!-- Comment Section End-->
         </div>
+
         <div class="md:w-1/3">
           <div class="bg-white rounded-xl shadow-lg p-6 sticky top-4">
             <div class="flex justify-between items-baseline mb-6">
@@ -272,12 +303,12 @@
           
           
           <!-- Weather Section -->
-            <div class="mt-24 w-full min-h-screen display-block text-center" >
+            <div class="mt-6 w-full min-h-screen display-block text-center" >
               <h1 class="  text-center text-3xl font-bold mt-8 pb-2 ">Weather Forecast</h1>
               <div class="max-w-md mx-auto my-1 text-black rounded-[50px] overflow-hidden">
                 <div class="p-2">
                     <div class="flex items-center justify-between mb-6">
-                        <input type="text" placeholder="Enter City Name To check Weather" class="input-weather flex-1 py-4 px-6 bg-[#ebfffc] text-[#555] rounded-[30px] mr-4 focus:outline-none text-lg" spellcheck="false" required>
+                        <input type="text" placeholder="Check the Weather" class="input-weather flex-1 py-4 px-6 bg-[#ebfffc] text-[#555] rounded-[30px] mr-4 focus:outline-none text-lg" spellcheck="false" required>
                         <button class="button-weather bg-[#ebfffc] p-4 rounded-full">
                             <img src="images/weather/search.png" alt="Search" class="w-6 h-6">
                         </button>
@@ -319,40 +350,12 @@
             </div>
         </div>      
       </div>
-              <!-- Comment Section Start-->
 
-
-  <div class="editor max-w-4xl flex flex-col text-gray-800 border border-gray-300 p-4 shadow-lg">
-    <div class="heading text-center font-bold text-3xl text-gray-800"> Write a Comments Here</div>
-    <textarea class="description bg-gray-100 sec p-3 h-60 border border-gray-300 outline-none" spellcheck="false" placeholder="Describe everything about this post here"></textarea>
-    <!-- icons -->
-    <fieldset class="starability-slot mt-6">
-      <input type="radio" id="no-rate" class="input-no-rate" name="review[rating]" value="1" checked aria-label="No rating." />
-      <input type="radio" id="first-rate1" name="review[rating]" value="1" />
-      <label for="first-rate1" title="Terrible">1 star</label>
-      <input type="radio" id="first-rate2" name="review[rating]" value="2" />
-      <label for="first-rate2" title="Not good">2 stars</label>
-      <input type="radio" id="first-rate3" name="review[rating]" value="3" />
-      <label for="first-rate3" title="Average">3 stars</label>
-      <input type="radio" id="first-rate4" name="review[rating]" value="4" />
-      <label for="first-rate4" title="Very good">4 stars</label>
-      <input type="radio" id="first-rate5" name="review[rating]" value="5" />
-      <label for="first-rate5" title="Amazing">5 stars</label>
-    </fieldset>
-    <!-- buttons -->
-    <div class="buttons flex justify-end">
-      <!-- <div class="btn border border-gray-300 p-1 px-4 font-semibold cursor-pointer text-gray-500 ml-auto">Cancel</div> -->
-      <div class="btn border rounded-lg border-indigo-500 p-1 px-5 py-2 font-semibold cursor-pointer text-gray-200 ml-2 bg-indigo-500">
-        <i class="fa-solid fa-paper-plane"></i>
-      </div>
-    </div>
-  </div>
-                  <!-- Comment Section End-->
     </main>
 
-  <section class="bg-white">
+  <section class="bg-white pt-96">
     <div class="mx-auto max-w-screen-xl px-4 py-12 sm:px-6 lg:px-8 lg:py-16">
-      <h2 class="text-center text-4xl font-bold tracking-tight text-gray-900 sm:text-5xl">
+      <h2 class="text-center text-4xl font-bold tracking-tight text-[#0B427E] sm:text-5xl">
         Read trusted reviews from our customers
       </h2>
   
