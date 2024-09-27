@@ -72,9 +72,6 @@ app.get("/lakefront", (req, res) => {
     res.render("lakefront");
 });
 
-
-
-
 app.get("/hotel", (req, res) => {
     res.render("hotel");
 });
