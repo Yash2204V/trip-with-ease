@@ -51,29 +51,26 @@ app.get("/artic", (req, res) => {
     res.render("artic");
 });
 app.get("/amazing", (req, res) => {
-    res.render("artic");
+    res.render("amazing");
 });
 app.get("/iconic", (req, res) => {
-    res.render("artic");
+    res.render("icons");
 });
 app.get("/mansions", (req, res) => {
-    res.render("artic");
+    res.render("mansions");
 });
 app.get("/boat", (req, res) => {
-    res.render("artic");
+    res.render("boat");
 });
 app.get("/island", (req, res) => {
-    res.render("artic");
+    res.render("island");
 });
 app.get("/cabins", (req, res) => {
-    res.render("artic");
+    res.render("cabins");
 });
 app.get("/lakefront", (req, res) => {
-    res.render("artic");
+    res.render("lakefront");
 });
-
-
-
 
 app.get("/hotel", (req, res) => {
     res.render("hotel");
