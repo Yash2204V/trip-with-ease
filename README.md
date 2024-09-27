@@ -1,24 +1,14 @@
 ```markdown
-# Tour & Tourism Website
+# Tour & Tourism Website: TripWithEase
 
 ## Project Description
 This is a comprehensive tour and tourism web-based platform that allows users to explore various travel destinations, browse available accommodations, check weather, and make bookings. The platform provides an immersive experience with high-quality images, featured sections, and modern design to enhance user experience.
-
-## Table of Contents
-- [Project Description](#project-description)
-- [Installation](#installation)
-- [Features](#features)
-- [Usage](#usage)
-- [Technologies Used](#technologies-used)
-- [Contributing](#contributing)
-- [License](#license)
-- [Contact](#contact)
 
 ## Installation
 
 1. **Clone the repository**:
    ```bash
-   git clone https://github.com/your-username/your-project.git
+   git clone https://github.com/YASH2204V/trip-with-ease.git
    cd your-project
    ```
 
@@ -104,6 +94,6 @@ This project is licensed under the MIT License - see the [LICENSE](LICENSE) file
 ## Contact
 
 For any questions or inquiries, feel free to contact me at:
-
 - **Email**: yash.v220104@gmail.com, vaibhavkummar2003@gmail.com
+  
 ```
